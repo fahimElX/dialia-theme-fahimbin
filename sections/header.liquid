@@ -5,7 +5,10 @@
       <div class="header-bottominner">
         <div class="header-logo">
           <a href="index.html">
-            {{ section.settings.site-logo | image_url: width: 105 | image_tag: alt: 'Site Logo', class: 'shopify-site-logo-' }}
+            <img class="lazyload"
+              data-src="{{ img_url }}"
+              data-sizes="auto"
+              alt="{{ preview_image.alt | escape }}">
           </a>
         </div>
         <nav class="tm-navigation">
