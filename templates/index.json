@@ -10,7 +10,6 @@
     }
   },
   "order": [
-    "main",
-    "sub-main"
+    "main"
   ]
 }
