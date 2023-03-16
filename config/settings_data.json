@@ -1,6 +1,26 @@
 {
-    "current": "Default",
-    "presets": {
-        "Default": {}
+  "current": {
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "email-address": "contact@example.com",
+          "phone-number": "1-800-915-6270"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "site-logo": "shopify:\/\/shop_images\/logo.png"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
     }
+  }
 }
