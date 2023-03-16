@@ -1,17 +1,16 @@
 {
   "sections": {
     "main": {
-      "type": "announcement-bar" ,
-      "settings": {
-      }    
-      },
-      "sub-main": {
-        "type": "announcement-bar",
-        "settings": {}
-      }
-
+      "type": "",
+      "settings": {}
     },
+    "sub-main": {
+      "type": "",
+      "settings": {}
+    }
+  },
   "order": [
-    "main", "sub-main"
+    "main",
+    "sub-main"
   ]
 }
