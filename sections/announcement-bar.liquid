@@ -8,7 +8,7 @@
           <div class="header-topinfo">
             <ul>
               <li>Email us :
-                <a href="mailto://contact@example.com">contact@example.com</a>
+                <a href="mailto:{{ section.settings.email-address }}">{{ section.settings.email-address }}</a>
               </li>
               <li>Call us :
                 <a href="tel://+1-800-915-6270">1-800-915-6270</a>
@@ -43,13 +43,7 @@
         "id": "phone-number",
         "label": "Call",
         "default": "1-800-915-6270"
-      }, {
-        "type": "url",
-        "id": "button_link",
-        "label": "Button link",
-        "default": "#"
       }
-
     ],
     "presets": [
       {
