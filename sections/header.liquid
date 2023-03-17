@@ -16,7 +16,7 @@
         </div>
 
         <nav class="tm-navigation"><ul>
-                {% for link in linklists.main-menu.links -%}<li class="tm-navigation-dropdown">
+                {% for link in linklists.menu.links -%}<li class="tm-navigation-dropdown">
                         {{ link.title | link_to: link.url }} 
                         {% if link.links.size > 0 %}<ul>
                             {% for child_link in link.links %}<li>{{ child_link.title | link_to: child_link.url }} </li>
