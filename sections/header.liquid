@@ -15,11 +15,11 @@
           </a>
         </div>
 
-         <nav class="">
+         <nav class="tm-navigation">
         <ul class="">
           {% for link in section.settings.menu.links %}
             {% if link.links != blank %}
-              <li class="">
+              <li class="tm-navigation-dropdown">
                   <a href="{{ link.url }}">{{ link.title }}</a>
                   <ul class="">
                     {% for sublink in linklists[link.handle].links %}
