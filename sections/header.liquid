@@ -19,13 +19,6 @@
             {% for link in section.settings.menu.links %}
               <li class="tm-navigation-dropdown">
                 <a href="{{ link.url }}">{{ link.title }}</a>
-        <ul class="">
-                   {% if link.links.size > 0 %}
-          {% for child_link in link.links %}
-            <li class="">
-              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-              {% endfor %}
-            {% endif %}
             {% endfor %}
           </ul>
         </nav>
