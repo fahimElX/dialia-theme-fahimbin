@@ -14,33 +14,19 @@
               id="logo">
           </a>
         </div>
-        <nav class="tm-navigation">
-          <ul>
-            {% for link in section.settings.menu.links %}
-              <li class="tm-navigation-dropdown">
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              	{% if link.links.size > 0 %}
-        <ul class="">
-          {% for child_link in link.links %}
-            <li class="">
-              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
-              {% if child_link.links.size > 0 %}
-                <ul class="">
-                  {% for grandchild_link in child_link.links %}
-                    <li class="">
-                      <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
+        <nav class="tm-navigation"><ul>
+                {% for link in linklists.main-menu.links -%}<li class="tm-navigation-dropdown">
+                        {{ link.title | link_to: link.url }} 
+                        {% if link.links.size > 0 %}<ul>
+                            {% for child_link in link.links %}<li>{{ child_link.title | link_to: child_link.url }} </li>
+                                {% if child_link.links.size > 0 %}<ul>
+                                    {% for grandchild_link in child_link.links %}<li>{{ grandchild_link.title | link_to: grandchild_link.url }} </li>
+                                    {% endfor %}</ul>
+                                {% endif %}
+                            {% endfor %}</ul>
+                        {% endif %}</li>
+                {%- endfor %}</ul></nav>
 
 
         <div class="header-icons">
