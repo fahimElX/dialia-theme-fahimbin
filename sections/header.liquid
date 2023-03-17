@@ -15,7 +15,8 @@
           </a>
         </div>
 
-         <ul class="menu">
+        <nav>
+          <ul class="">
   {% for link in section.settings.menu.links %}
     <li class="menu-link">
       <a href="{{ link.url }}">{{ link.title }}</a>
@@ -42,6 +43,7 @@
     </li>
   {% endfor %}
 </ul>
+        </nav>
 
 
 
