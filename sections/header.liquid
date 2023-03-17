@@ -15,37 +15,20 @@
           </a>
         </div>
 
-        <nav class="tm-navigation">
-          <ul class="">
-  {% for link in section.settings.menu.links %}
-      {% if link.links.size > 0 %}
-    <li class="tm-navigation-dropdown">
-      <a href="{{ link.url }}">{{ link.title }}</a>
-        <ul class="">
-          {% for child_link in link.links %}
-            <li class="">
-              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-
-              {% if child_link.links.size > 0 %}
-                <ul class="">
-                  {% for grandchild_link in child_link.links %}
-                    <li class="">
-                      <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-        </nav>
-
-
-
+         <nav class="tm-navigation">                      <ul>                        {%- for link in section.settings.menu.links -%}
+                           {%- if link.links != blank -%}
+                          <li class="tm-navigation-dropdown">                              <a href="{{ link.url }}">{{ link.title }}</a> <i class="fa-solid fa-chevron-down"></i>                              <ul>                                 {%- for childlink in link.links -%}
+                                  {%- if childlink.links == blank -%}
+                                  <li>                                     <a href="{{ childlink.url }}">{{ childlink.title }}</a>                                  </li>                                    {% else %}
+                                    <li>                                        <a href="{{ childlink.url }}">{{ childlink.title }}</a> <i class="fa-solid fa-angle-right"></i>                                     <ul>                                       {%- for grandchildlink in childlink.links -%}
+                                         <li>                                           <a href="{{ grandchildlink.url }}">{{ grandchildlink.title }}</a>                                         </li>                                       {%- endfor -%}
+                                     </ul>                                     </li>                                     {% endif %}
+                                {%- endfor -%}
+                              </ul>                          </li>                          {% else %}
+                             <li>                                <a href="{{ link.url }}">{{ link.title }}</a>                             </li>                            {% endif %}
+                        {% endfor %}
+                      </ul>          </nav>
+        
         <div class="header-icons">
           <ul>
             <li><a href="cart.html"><i class="zmdi zmdi-shopping-cart"></i></a></li>
@@ -80,10 +63,11 @@
         "id": "site-logo",
         "label": "Site Logo"
       },{
-         "type": "link_list",
-  "id": "menu",
-  "label": "Choose Menu"
-      }
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "Choose Menu"
+    }
     ]
   }
 {% endschema %}
