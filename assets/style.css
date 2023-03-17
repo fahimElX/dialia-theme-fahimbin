@@ -434,7 +434,6 @@ html {
 }
 
 body {
-  overflow: hidden !important;
   font-size: 14px;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
