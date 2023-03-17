@@ -3394,7 +3394,7 @@ button.tm-videobutton:hover span {
 
 /* Dropdown Menu */
 .tm-navigation .tm-navigation-dropdown > a::after {
-  content: "\f2f9";
+  content: "";
   font-family: "Material-Design-Iconic-Font";
   font-size: 18px;
   padding-left: 3px;
@@ -3460,7 +3460,7 @@ button.tm-videobutton:hover span {
 }
 
 .tm-navigation .tm-navigation-dropdown ul li.has-child > a::after {
-  content: "\f2fb";
+  content: "";
   font-family: "Material-Design-Iconic-Font";
   font-size: 18px;
   float: right;
@@ -3508,7 +3508,7 @@ button.tm-videobutton:hover span {
 }
 
 .tm-navigation .tm-navigation-megamenu > a::after {
-  content: "\f2f9";
+  content: "";
   font-family: "Material-Design-Iconic-Font";
   font-size: 18px;
   padding-left: 3px;
