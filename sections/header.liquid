@@ -20,15 +20,15 @@
               <li class="tm-navigation-dropdown">
                 <a href="{{ link.url }}">{{ link.title }}</a>
               	{% if link.links.size > 0 %}
-        <ul class="menu dropdown-child">
+        <ul class="">
           {% for child_link in link.links %}
-            <li class="menu-link">
+            <li class="">
               <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
               {% if child_link.links.size > 0 %}
-                <ul class="menu dropdown-grandchild">
+                <ul class="">
                   {% for grandchild_link in child_link.links %}
-                    <li class="menu-link">
+                    <li class="">
                       <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
                     </li>
                   {% endfor %}
