@@ -15,7 +15,30 @@
           </a>
         </div>
 
-        
+         <nav class="">
+        <ul class="">
+          {% for link in section.settings.menu.links %}
+            {% if link.links != blank %}
+              <li class="">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                  <ul class="">
+                    {% for sublink in linklists[link.handle].links %}
+                      <li>
+                        <a class="" href="{{ sublink.url }}">
+                          {{ sublink.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+              </li>
+            {% else %}
+              <li>
+                <a class="" href="{{ link.url }}"> {{ link.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
 
 
         <div class="header-icons">
