@@ -3394,7 +3394,7 @@ button.tm-videobutton:hover span {
 
 /* Dropdown Menu */
 .tm-navigation .tm-navigation-dropdown > a::after {
-  content: "";
+  content: "\f2f9";
   font-family: "Material-Design-Iconic-Font";
   font-size: 18px;
   padding-left: 3px;
