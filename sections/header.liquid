@@ -15,24 +15,49 @@
           </a>
         </div>
 
-         <nav class="tm-navigation">                      <ul>                        {%- for link in section.settings.menu.links -%}
-                           {%- if link.links != blank -%}
-                          <li class="tm-navigation-dropdown">                              <a href="{{ link.url }}">{{ link.title }}</a> <i class="fa-solid fa-chevron-down"></i>                              <ul>                                 {%- for childlink in link.links -%}
-                                  {%- if childlink.links == blank -%}
-                                  <li>                                     <a href="{{ childlink.url }}">{{ childlink.title }}</a>                                  </li>                                    {% else %}
-                                    <li>                                        <a href="{{ childlink.url }}">{{ childlink.title }}</a> <i class="fa-solid fa-angle-right"></i>                                     <ul>                                       {%- for grandchildlink in childlink.links -%}
-                                         <li>                                           <a href="{{ grandchildlink.url }}">{{ grandchildlink.title }}</a>                                         </li>                                       {%- endfor -%}
-                                     </ul>                                     </li>                                     {% endif %}
-                                {%- endfor -%}
-                              </ul>                          </li>                          {% else %}
-                             <li>                                <a href="{{ link.url }}">{{ link.title }}</a>                             </li>                            {% endif %}
-                        {% endfor %}
-                      </ul>          </nav>
-        
+        <nav class="tm-navigation">
+          <ul>
+            {%- for link in section.settings.menu.links -%}
+              {%- if link.links != blank -%}
+                <li class="tm-navigation-dropdown">
+                  <a href="{{ link.url }}">{{ link.title }}
+                    <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                  </a>
+                  <ul>
+                    {%- for childlink in link.links -%}
+                      {%- if childlink.links == blank -%}
+                        <li>
+                          <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                        </li>
+                      {% else %}
+                        <li>
+                          <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                          <i class="fa-solid fa-angle-right"></i>
+                          <ul>
+                            {%- for grandchildlink in childlink.links -%}
+                              <li>
+                                <a href="{{ grandchildlink.url }}">{{ grandchildlink.title }}</a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        </li>
+                      {% endif %}
+                    {%- endfor -%}
+                  </ul>
+                </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+
         <div class="header-icons">
           <ul>
-            <li><a href="cart.html"><i class="zmdi zmdi-shopping-cart"></i></a></li>
-            <li><a href="#" class="header-searchtrigger"><i class="zmdi zmdi-search"></i></a></li>
+            <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#" class="header-searchtrigger"><i class="fa-solid fa-magnifying-glass"></i></a></li>
           </ul>
         </div>
         <div class="header-searchbox">
@@ -62,12 +87,12 @@
         "type": "image_picker",
         "id": "site-logo",
         "label": "Site Logo"
-      },{
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "Choose Menu"
-    }
+      }, {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "Choose Menu"
+      }
     ]
   }
 {% endschema %}
