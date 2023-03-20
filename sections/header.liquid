@@ -21,7 +21,7 @@
               {%- if link.links != blank -%}
                 <li class="tm-navigation-dropdown">
                   <a href="{{ link.url }}">{{ link.title }}
-                    <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
                   </a>
                   <ul>
                     {%- for childlink in link.links -%}
@@ -31,8 +31,9 @@
                         </li>
                       {% else %}
                         <li>
-                          <a href="{{ childlink.url }}">{{ childlink.title }}</a>
-                          <i class="fa-solid fa-angle-right"></i>
+                          <a href="{{ childlink.url }}">{{ childlink.title }}
+                            <i class="fa-solid fa-angle-right"></i>
+                          </a>
                           <ul>
                             {%- for grandchildlink in childlink.links -%}
                               <li>
