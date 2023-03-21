@@ -53,10 +53,28 @@
             "feature-heading": "Massage Therapy",
             "feature-info": "<p>Massage therapy is the manipulation of the soft tissues of  the body including muscles, connective tissue, tendons, ligaments and joints.<\/p>"
           }
+        },
+        "a6ef6607-8202-4d57-994b-9cf59ee6aef1": {
+          "type": "feature-card",
+          "settings": {
+            "feature-image": "shopify:\/\/shop_images\/massage.png",
+            "feature-heading": "Physio Therapy",
+            "feature-info": "<p>Physiotherapists spend years studying how the body works,how injuries impact performance & how to recover and repair injured tissues.<\/p>"
+          }
+        },
+        "c6264bd2-4dad-4a94-b1a3-6f906ffa3272": {
+          "type": "feature-card",
+          "settings": {
+            "feature-image": "shopify:\/\/shop_images\/acupuncture.png",
+            "feature-heading": "Acupuncture",
+            "feature-info": "<p>Acupuncture is a form of alternative medicine in which thin needles are inserted into the body. It is a key component of medicine.<\/p>"
+          }
         }
       },
       "block_order": [
-        "template--18256283533595__aeba5a94-15eb-4748-89e1-65718911a618-16793989688648f912-0"
+        "template--18256283533595__aeba5a94-15eb-4748-89e1-65718911a618-16793989688648f912-0",
+        "a6ef6607-8202-4d57-994b-9cf59ee6aef1",
+        "c6264bd2-4dad-4a94-b1a3-6f906ffa3272"
       ],
       "settings": {
       }
