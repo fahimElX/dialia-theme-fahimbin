@@ -1,0 +1,74 @@
+<div class="tm-section features-area bg-white tm-padding-section">
+  <div class="container">
+    <div class="row justify-content-center mt-30-reverse">
+      {% for block in section.blocks %}
+        <!-- Single Feature -->
+        <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="tm-feature text-center wow fadeInUp">
+            <span class="tm-feature-icon">
+              {{ block.settings.feature-image | image_url: 'master' | img_tag }}
+            </span>
+            <span class="tm-feature-backicon">
+              {{ block.settings.feature-image | image_url: 'master' | img_tag }}
+            </span>
+            <h5>
+              {{ block.settings.feature-heading }}
+            </h5>
+            <p>
+              {{ block.settings.feature-info }}
+            </p>
+          </div>
+        </div>
+        <!--// Single Feature -->
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+<style>
+  .tm-feature-icon img {
+    max-width: 60px;
+    max-height: 66px;
+  }
+  .tm-feature-backicon img {
+    opacity: 0.3;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Feature-Section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Feature Card",
+        "type": "feature-card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "feature-image",
+            "label": "Feature Image"
+          }, {
+            "type": "text",
+            "id": "feature-heading",
+            "label": "Feature Heading",
+            "default": "Some text"
+          }, {
+            "type": "richtext",
+            "id": "feature-info",
+            "label": "Feature Info"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feature-Section",
+        "blocks": [
+          {
+            "type": "feature-card"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
