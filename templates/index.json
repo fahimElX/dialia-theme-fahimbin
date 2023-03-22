@@ -92,11 +92,33 @@
         "btn-text": "Read More",
         "contact-number": "1-800-915-6270"
       }
+    },
+    "2064ff79-5db6-4d7d-9ef5-eb1701b62185": {
+      "type": "our-services",
+      "blocks": {
+        "template--18256283533595__2064ff79-5db6-4d7d-9ef5-eb1701b62185-16794925515a4b817d-0": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/98-988290_other-physical-therapy-icon-images-physical-therapy-symbol-png.jpg",
+            "service-card-heading": "Sports Rehabilitation",
+            "service-card-info": "Aromatherapy uses plant materials and arom atic plant oils, including essential oils. It can be offered as a complementary therapy."
+          }
+        }
+      },
+      "block_order": [
+        "template--18256283533595__2064ff79-5db6-4d7d-9ef5-eb1701b62185-16794925515a4b817d-0"
+      ],
+      "settings": {
+        "section-bg-img": "shopify:\/\/shop_images\/bg-shape-1.png",
+        "section-heading": "Our Services",
+        "section-description": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Iusillum vocent mediocritatem an cule dicta iriure at phaedrum."
+      }
     }
   },
   "order": [
     "Hero-Slider",
     "aeba5a94-15eb-4748-89e1-65718911a618",
-    "4ffb6844-bcb8-4b7b-b072-0bd291073012"
+    "4ffb6844-bcb8-4b7b-b072-0bd291073012",
+    "2064ff79-5db6-4d7d-9ef5-eb1701b62185"
   ]
 }
