@@ -1,0 +1,58 @@
+<!-- Call To Action -->
+        <div
+          class="tm-section call-to-action-area tm-padding-section section-wrapper-{{section.id}}"
+          data-bgimage=""
+          data-overlay="8"
+          style="background-image: url( {{ section.settings.cta-bg-img }});"
+        >
+          <div class="container">
+            <div class="tm-cta">
+              <div class="tm-cta-content">
+                <h3>{{ section.settings.cta-heading }}</h3>
+                <h2>{{ section.settings.cta-description }}</h2>
+              </div>
+              <div class="tm-cta-button">
+                <a href="#" class="tm-button tm-button-white"
+                  >{{ section.settings.cta-btn-text }}</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// Call To Action -->
+
+        {% schema %}
+            {
+                 {
+    "name": "Call To Action",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "cta-bg-img",
+        "label": "CTA Background Image "
+      }, {
+        "type": "text",
+        "id": "cta-heading",
+        "label": "CTA Heading",
+        "default": "Some text"
+      }, {
+        "type": "text",
+        "id": "cta-description",
+        "label": "CTA Description",
+        "default": "Some text"
+      },
+      {
+        "type": "text",
+        "id": "cta-btn-text",
+        "label": "CTA Button",
+        "default": "Some text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Call To Action"
+      }
+    ]
+  }
+            }
+        {% endschema %}
