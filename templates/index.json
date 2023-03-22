@@ -78,10 +78,25 @@
       ],
       "settings": {
       }
+    },
+    "4ffb6844-bcb8-4b7b-b072-0bd291073012": {
+      "type": "about-us",
+      "settings": {
+        "about-us-video": "https:\/\/youtu.be\/Sv511KEiIJQ",
+        "heading-color-text": "Positive Effects",
+        "heading-normal-text": "of",
+        "heading": "<p>Some TextDialia Registered Massage Therapy<\/p>",
+        "description-1": "<p>The health care profession of Dialia Registered Massage Therapy is far more advanced than typical bodywork or relaxation massage.<\/p>",
+        "description-2": "<p>Registered Massage therapy can be used for the treatment of both acute and chronic conditions. The purpose of massage is generally for the treatment of body stress or pain. Our services will help you reduce stress, relieve pain from headaches, reduce pain from injuries. Registered Massage Therapy is a safe and natural health care therapy that can help alleviate the discomfort associated with everyday.<\/p>",
+        "read-more-btn-link": "shopify:\/\/blogs\/news",
+        "btn-text": "Read More",
+        "contact-number": "1-800-915-6270"
+      }
     }
   },
   "order": [
     "Hero-Slider",
-    "aeba5a94-15eb-4748-89e1-65718911a618"
+    "aeba5a94-15eb-4748-89e1-65718911a618",
+    "4ffb6844-bcb8-4b7b-b072-0bd291073012"
   ]
 }
