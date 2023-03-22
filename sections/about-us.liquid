@@ -1,0 +1,106 @@
+<div class="tm-section about-us-area bg-grey section-wrapper-{{section.id}}">
+  <div
+    class="about-image"
+    data-bgimage="assets/images/others/about-image-1.jpg"
+    data-overlay="1">
+    <div class="tm-videobutton">
+      <a data-fancybox href="{{ section.settings.video-link }}">
+        <span>
+          <i class="fa-solid fa-play"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-6">
+        <div class="about-content tm-padding-section">
+          <h2>
+            <span>
+              <span class="color-theme">{{ section.settings.heading-color-text }}</span>
+              {{ section.settings.heading-normal-text }}</span><br/>
+            {{ section.settings.heading }}
+          </h2>
+          <p>
+            {{ section.settings.description-1 }}
+          </p>
+          <p>
+            {{ section.settings.description-2 }}
+          </p>
+          <div class="about-contentbottom">
+            <a href="{{ block.settings.read-more-btn-link }}" class="tm-button">{{ block.settings.btn-text }}</a>
+            <a href="tel:+{{block.settings.contact-number}}" class="tm-callbutton">
+              <span class="tm-callbutton-icon">
+                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+              </span>
+              <h3>{{ section.settings.contact-number }}</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "About Us",
+    "settings": [
+      {
+        "type": "video_url",
+        "id": "about-us-video",
+        "label": "About Us video",
+        "accept": ["youtube", "vimeo"]
+      },
+
+      {
+        "type": "text",
+        "id": "heading-color-text",
+        "label": "Heading Color Text",
+        "default": "Some text"
+      },
+      {
+        "type": "text",
+        "id": "heading-normal-text",
+        "label": "Heading Normal Text",
+        "default": "Some text"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading",
+        "default": "<p>Some Text</p>"
+      }, {
+        "type": "richtext",
+        "id": "description-1",
+        "label": "Description-1",
+        "default": "<p>Some text</p>"
+      }, {
+        "type": "richtext",
+        "id": "description-2",
+        "label": "Description-2",
+        "default": "<p>Some text</p>"
+      }, {
+        "type": "url",
+        "id": "read-more-btn-link",
+        "label": "Read More Button link"
+      }, {
+        "type": "text",
+        "id": "btn-text",
+        "label": "Button Text",
+        "default": "Quick links"
+      }, {
+        "type": "text",
+        "id": "contact-number",
+        "label": "Contact Number",
+        "default": "Quick links"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Us"
+      }
+    ]
+  }
+{% endschema %}
