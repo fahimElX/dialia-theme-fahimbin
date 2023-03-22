@@ -6,9 +6,10 @@
     <!-- Header hook for plugins -->
     {{ content_for_header }}
     <!-- Style & script tag -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
     {{ 'plugins.css' | asset_url | stylesheet_tag }}
@@ -29,10 +30,7 @@
     <script src="{{ 'bootstrap.min.js' | asset_url }}" defer></script>
     <script src="{{ 'plugins.js' | asset_url }}" defer></script>
     <script src="{{ 'main.js' | asset_url }}" defer></script>
-    <script
-      defer
-      src="https://kit.fontawesome.com/75c46bc2bc.js"
-      crossorigin="anonymous"></script>
+
 
   </body>
 </html>

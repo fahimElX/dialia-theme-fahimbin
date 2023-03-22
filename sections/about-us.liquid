@@ -1,12 +1,13 @@
+<!-- About Us -->
 <div class="tm-section about-us-area bg-grey section-wrapper-{{section.id}}">
   <div
     class="about-image"
     data-bgimage="assets/images/others/about-image-1.jpg"
     data-overlay="1">
     <div class="tm-videobutton">
-      <a data-fancybox href="{{ section.settings.video-link }}">
+      <a data-fancybox href="{{ section.settings.about-us-video }}">
         <span>
-          <i class="fa-solid fa-play"></i>
+          <i class="flaticon-play-button"></i>
         </span>
       </a>
     </div>
@@ -28,10 +29,10 @@
             {{ section.settings.description-2 }}
           </p>
           <div class="about-contentbottom">
-            <a href="{{ block.settings.read-more-btn-link }}" class="tm-button">{{ block.settings.btn-text }}</a>
-            <a href="tel:+{{block.settings.contact-number}}" class="tm-callbutton">
+            <a href="{{ section.settings.read-more-btn-link }}" class="tm-button">{{ section.settings.btn-text }}</a>
+            <a href="tel:+18009156270" class="tm-callbutton">
               <span class="tm-callbutton-icon">
-                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                <i class="zmdi zmdi-phone-in-talk"></i>
               </span>
               <h3>{{ section.settings.contact-number }}</h3>
             </a>
@@ -41,6 +42,7 @@
     </div>
   </div>
 </div>
+<!--// About Us -->
 
 
 {% schema %}
