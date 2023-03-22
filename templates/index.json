@@ -119,12 +119,39 @@
             "service-card-heading": "Aroma Therapy",
             "service-card-info": "Aromatherapy uses plant materials and arom atic plant oils, including essential oils. It can be offered as a complementary therapy."
           }
+        },
+        "1d1958a0-c25f-4477-a799-ca1ba960c94e": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/pet-shampoo.png",
+            "service-card-heading": "Physiotherapy",
+            "service-card-info": "A personal injury from vehicle accident trauma is common many times effects of an vehicle injury are delayed or subtle."
+          }
+        },
+        "705badf6-f006-4990-9699-6f6c33d6dac0": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/healthy-lifestyle-logo.png",
+            "service-card-heading": "Relaxation Massage",
+            "service-card-info": "This type of massage treatment is strictly for the purposes of rest and relaxation. massage technique is not designed for therapy."
+          }
+        },
+        "36f87f6b-c2f4-4f35-ad51-137c85a9248b": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/flower.png",
+            "service-card-heading": "Vehicle Injury Treatment",
+            "service-card-info": "A personal injury from vehicle accident trauma is common many times effects of an vehicle injury are delayed or subtle."
+          }
         }
       },
       "block_order": [
         "template--18256283533595__2064ff79-5db6-4d7d-9ef5-eb1701b62185-16794925515a4b817d-0",
         "4a883770-359b-47d0-969b-468fe2dcbb90",
-        "5629603b-83fd-4b99-87dd-47fc96e1fad1"
+        "5629603b-83fd-4b99-87dd-47fc96e1fad1",
+        "1d1958a0-c25f-4477-a799-ca1ba960c94e",
+        "705badf6-f006-4990-9699-6f6c33d6dac0",
+        "36f87f6b-c2f4-4f35-ad51-137c85a9248b"
       ],
       "settings": {
         "section-bg-img": "shopify:\/\/shop_images\/bg-shape-1.png",
