@@ -1,0 +1,100 @@
+<!-- Services Area -->
+<div class="tm-section services-area tm-padding-section bg-white section-wrapper-{{section.id}}">
+  <span class="bg-shape-left">
+    {{ section.settings.section-bg-img | image_tag | image_url: "master" }}
+  </span>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-md-10 col-12">
+        <div class="tm-section-title text-center">
+          <h2>{{ section.settings.section-heading }}</h2>
+          <p>
+            {{ section.settings.section-description }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-30-reverse">
+      {% for block in section.blocks %}
+        <!-- Single Service -->
+        <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="tm-service text-center wow fadeInUp">
+            <div class="tm-service-inner">
+              <span class="tm-service-icon">
+                {{ block.settings.section-bg-img | image_tag | image_url: "master" }}
+              </span>
+              <span class="tm-service-backicon">
+                {{ block.settings.section-bg-img | image_tag | image_url: "master" }}
+              </span>
+              <h5>
+                <a href="service-details.html">{{ block.settings.service-card-heading }}</a>
+              </h5>
+              <p>
+                {{ block.settings.service-card-info }}
+              </p>
+              <a href="service-details.html" class="tm-readmore">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!--// Single Service -->
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--// Services Area -->
+
+{% schema %}
+  {
+    "name": "Our Service Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "section-bg-img",
+        "label": "Section Background Image "
+      }, {
+        "type": "text",
+        "id": "section-heading",
+        "label": "Section Heading",
+        "default": "Some text"
+      }, {
+        "type": "text",
+        "id": "section-description",
+        "label": "Section Description",
+        "default": "Some text"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Service Card",
+        "type": "service-card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "service-card-img",
+            "label": "Service Card Image "
+          }, {
+            "type": "text",
+            "id": "service-card-heading",
+            "label": "Service Card Heading",
+            "default": "Some text"
+          }, {
+            "type": "text",
+            "id": "service-card-info",
+            "label": "Service Card Info",
+            "default": "Some text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Our Service Section",
+        "blocks": [
+          {
+            "type": "service-card"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
