@@ -1,7 +1,7 @@
 <!-- Services Area -->
 <div class="tm-section services-area tm-padding-section bg-white section-wrapper-{{section.id}}">
   <span class="bg-shape-left">
-    {{ section.settings.section-bg-img | image_tag | image_url: "master" }}
+    <img src="{{ section.settings.section-bg-img | image_url }}">
   </span>
   <div class="container">
     <div class="row justify-content-center">
@@ -21,10 +21,10 @@
           <div class="tm-service text-center wow fadeInUp">
             <div class="tm-service-inner">
               <span class="tm-service-icon">
-                {{ block.settings.section-bg-img | image_tag | image_url: "master" }}
+                <img src="{{ block.settings.service-card-img | image_url }}">
               </span>
               <span class="tm-service-backicon">
-                {{ block.settings.section-bg-img | image_tag | image_url: "master" }}
+                <img src="{{ block.settings.service-card-img | image_url }}">
               </span>
               <h5>
                 <a href="service-details.html">{{ block.settings.service-card-heading }}</a>
