@@ -158,12 +158,22 @@
         "section-heading": "Our Services",
         "section-description": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Iusillum vocent mediocritatem an cule dicta iriure at phaedrum."
       }
+    },
+    "bf82b922-6d7d-4931-95f0-c4a86007c322": {
+      "type": "call-to-action",
+      "settings": {
+        "cta-bg-img": "shopify:\/\/shop_images\/call-to-action-bg.jpg",
+        "cta-heading": "New Patient Special Offer",
+        "cta-description": "For your convenience, you can book your appointment",
+        "cta-btn-text": "Book an Appointment"
+      }
     }
   },
   "order": [
     "Hero-Slider",
     "aeba5a94-15eb-4748-89e1-65718911a618",
     "4ffb6844-bcb8-4b7b-b072-0bd291073012",
-    "2064ff79-5db6-4d7d-9ef5-eb1701b62185"
+    "2064ff79-5db6-4d7d-9ef5-eb1701b62185",
+    "bf82b922-6d7d-4931-95f0-c4a86007c322"
   ]
 }
