@@ -1,7 +1,7 @@
 <!-- Call To Action -->
 <div
   class="tm-section call-to-action-area tm-padding-section section-wrapper-{{ section.id }}"
-  data-bgimage=""
+  data-bgimage="{{ section.settings.cta-bg-img | image_url }}"
   data-overlay="8"
   style="background-image: url({{ section.settings.cta-bg-img | image_url }});">
   <div class="container">
