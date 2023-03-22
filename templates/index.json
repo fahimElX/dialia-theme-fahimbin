@@ -103,10 +103,28 @@
             "service-card-heading": "Sports Rehabilitation",
             "service-card-info": "Aromatherapy uses plant materials and arom atic plant oils, including essential oils. It can be offered as a complementary therapy."
           }
+        },
+        "4a883770-359b-47d0-969b-468fe2dcbb90": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/herbal.png",
+            "service-card-heading": "Home Care Physiotherapy",
+            "service-card-info": "Physiotherapists spend years studying how the body works,how injuries impact performance & how to recover and repair injured tissues."
+          }
+        },
+        "5629603b-83fd-4b99-87dd-47fc96e1fad1": {
+          "type": "service-card",
+          "settings": {
+            "service-card-img": "shopify:\/\/shop_images\/acupuncture.png",
+            "service-card-heading": "Aroma Therapy",
+            "service-card-info": "Aromatherapy uses plant materials and arom atic plant oils, including essential oils. It can be offered as a complementary therapy."
+          }
         }
       },
       "block_order": [
-        "template--18256283533595__2064ff79-5db6-4d7d-9ef5-eb1701b62185-16794925515a4b817d-0"
+        "template--18256283533595__2064ff79-5db6-4d7d-9ef5-eb1701b62185-16794925515a4b817d-0",
+        "4a883770-359b-47d0-969b-468fe2dcbb90",
+        "5629603b-83fd-4b99-87dd-47fc96e1fad1"
       ],
       "settings": {
         "section-bg-img": "shopify:\/\/shop_images\/bg-shape-1.png",
