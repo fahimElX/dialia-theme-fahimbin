@@ -159,6 +159,15 @@
         "section-description": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Iusillum vocent mediocritatem an cule dicta iriure at phaedrum."
       }
     },
+    "48ada113-0450-4b1e-9548-57b2aac6a674": {
+      "type": "products-area",
+      "settings": {
+        "products-area-bg-img": "shopify:\/\/shop_images\/bg-shape-1.png",
+        "section-heading": "Welcome to our shop",
+        "section-description": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at phaedrum.",
+        "collection": "falls-prevention-prorgam"
+      }
+    },
     "9718b0ac-062f-4a3a-a6f3-07161fc3b7c4": {
       "type": "call-to-action",
       "settings": {
@@ -195,6 +204,7 @@
     "aeba5a94-15eb-4748-89e1-65718911a618",
     "4ffb6844-bcb8-4b7b-b072-0bd291073012",
     "2064ff79-5db6-4d7d-9ef5-eb1701b62185",
+    "48ada113-0450-4b1e-9548-57b2aac6a674",
     "9718b0ac-062f-4a3a-a6f3-07161fc3b7c4",
     "a73866b4-5f9b-44c7-96a1-23212fa31e21",
     "026d838c-9c6a-469b-8228-f0a5dbda3494",
