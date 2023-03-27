@@ -1,0 +1,86 @@
+<!-- Latest Blog Area -->
+<div class="tm-section latest-blog-area tm-padding-section bg-white section-wrapper-{{section.id}}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-md-10 col-12">
+        <div class="tm-section-title text-center">
+          <h2>
+            {{ section.settings.section-title }}
+          </h2>
+          <p>
+            {{ section.settings.section-text }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row blog-slider-active tm-slider-dots">
+
+      {% for article in blogs.news.articles %}
+        <!-- Single Blog -->
+        <div class="col">
+          <div class="tm-blog">
+            <div class="tm-blog-top">
+              <a href="blog-details.html">
+                <img src="{{ article.image | image_url }}" />
+              </a>
+              <span class="tm-blog-date">18 Nov, 2019</span>
+            </div>
+            <div class="tm-blog-bottom">
+              <div class="tm-blog-meta">
+                <span>
+                  <a href="blog.html">
+                    <i class="zmdi zmdi-account"></i>
+                    Admin</a>
+                </span>
+                <span>
+                  <a href="blog-details.html">
+                    <i class="zmdi zmdi-comments"></i>
+                    Comments (0)</a>
+                </span>
+                <span>
+                  <a href="blog.html">
+                    <i class="zmdi zmdi-folder"></i>
+                    Services</a>
+                </span>
+              </div>
+              <h5 class="tm-blog-title">
+                <a href="blog-details.html">{{ article.title }}</a>
+              </h5>
+              <p>
+                {{ article.excerpt }}
+              </p>
+              <a href="blog-details.html" class="tm-button tm-button-dark">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!--// Single Blog -->
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+<!--// Latest Blog Area -->
+
+{% schema %}
+  {
+    "name": "Latest Blog Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section-title",
+        "label": "Section Title",
+        "default": "Lorem Lorem"
+      }, {
+        "type": "text",
+        "id": "section-text",
+        "label": "Section message",
+        "default": "Welcome to my shop!"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Latest Blog Section"
+      }
+    ]
+  }
+{% endschema %}
