@@ -167,6 +167,21 @@
         "cta-description": "For your convenience, you can book your appointment",
         "cta-btn-text": "Book an Appointment"
       }
+    },
+    "026d838c-9c6a-469b-8228-f0a5dbda3494": {
+      "type": "latest-blog",
+      "settings": {
+        "section-title": "Our Latest News",
+        "section-text": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at phaedrum."
+      }
+    },
+    "3acdf792-3abe-4c8e-9eac-193a5f04e895": {
+      "type": "footer-section",
+      "settings": {
+        "menu": "footer",
+        "blog": "footer-blog",
+        "image_of_payment": "shopify:\/\/shop_images\/payment-methods.png"
+      }
     }
   },
   "order": [
@@ -174,6 +189,8 @@
     "aeba5a94-15eb-4748-89e1-65718911a618",
     "4ffb6844-bcb8-4b7b-b072-0bd291073012",
     "2064ff79-5db6-4d7d-9ef5-eb1701b62185",
-    "9718b0ac-062f-4a3a-a6f3-07161fc3b7c4"
+    "9718b0ac-062f-4a3a-a6f3-07161fc3b7c4",
+    "026d838c-9c6a-469b-8228-f0a5dbda3494",
+    "3acdf792-3abe-4c8e-9eac-193a5f04e895"
   ]
 }
