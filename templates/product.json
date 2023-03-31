@@ -1,0 +1,11 @@
+{
+    "sections": {
+        "pdp-section": {
+            "type": "pdp-section",
+            "blocks": {}
+        }
+    },
+    "order": [
+        "pdp-section"
+    ]
+}
