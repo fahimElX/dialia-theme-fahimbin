@@ -1,11 +1,12 @@
 {
-    "sections": {
-        "pdp-section": {
-            "type": "pdp-section",
-            "blocks": {}
-        }
-    },
-    "order": [
-        "pdp-section"
-    ]
+  "sections": {
+    "pdp-section": {
+      "type": "pdp-section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "pdp-section"
+  ]
 }

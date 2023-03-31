@@ -14,6 +14,14 @@
           "site-logo": "shopify:\/\/shop_images\/logo.png",
           "menu": "main-menu"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "menu": "footer",
+          "blog": "footer-blog",
+          "image_of_payment": "shopify:\/\/shop_images\/payment-methods.png"
+        }
       }
     },
     "content_for_index": [
