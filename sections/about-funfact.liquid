@@ -1,0 +1,65 @@
+<div class="funfact-area tm-padding-section-top">
+  <div class="container">
+    <div class="row mt-30-reverse">
+      {% for block in section.blocks %}
+        <!-- Single Funfact -->
+        <div class="col mt-30">
+          <div class="tm-funfact">
+            <span class="tm-funfact-icon">
+              <img src="{{ block.settings.icon | img_url: 'small' }}">
+            </span>
+            <div class="tm-funfact-content">
+              <span class="tm-funfact-contentbg"></span>
+              <span class="odometer" data-count-to="{{ block.settings.count }}"></span>
+              <h5>{{ block.settings.title }}</h5>
+            </div>
+          </div>
+        </div>
+        <!--// Single Funfact -->
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Funfact section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Funfact",
+        "type": "funfact",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Funfact Icon"
+          }, {
+            "type": "number",
+            "id": "count",
+            "label": "Funfact Count",
+            "default": 200
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Funfact Heading",
+            "default": "Title Here"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Funfact section",
+        "blocks": [
+          {
+            "type": "funfact"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
