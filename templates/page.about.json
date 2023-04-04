@@ -10,9 +10,55 @@
         "heroslider-img": "shopify:\/\/shop_images\/heroslider-image-1_97dc981d-c9ce-447a-9645-c20dd6820275.jpg",
         "hero-section-video": "https:\/\/youtu.be\/Sv511KEiIJQ"
       }
+    },
+    "baace194-26d0-4518-8821-bfe19b564c12": {
+      "type": "about-funfact",
+      "blocks": {
+        "template--18396144271643__baace194-26d0-4518-8821-bfe19b564c12-168059495911cef22c-0": {
+          "type": "funfact",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/flower.png",
+            "count": 5320,
+            "title": "Therapy Experts"
+          }
+        },
+        "467e3c35-6e77-4c3b-991e-c1cb3922dc7b": {
+          "type": "funfact",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/healthy-lifestyle-logo.png",
+            "count": 3231,
+            "title": "Happy Patients"
+          }
+        },
+        "179b7524-8347-4715-b40b-1a0c3071f46b": {
+          "type": "funfact",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/massage.png",
+            "count": 2435,
+            "title": "Treatment"
+          }
+        },
+        "ae4fa676-8444-4982-a828-625ac7ecc3b2": {
+          "type": "funfact",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/acupuncture.png",
+            "count": 195,
+            "title": "Awards"
+          }
+        }
+      },
+      "block_order": [
+        "template--18396144271643__baace194-26d0-4518-8821-bfe19b564c12-168059495911cef22c-0",
+        "467e3c35-6e77-4c3b-991e-c1cb3922dc7b",
+        "179b7524-8347-4715-b40b-1a0c3071f46b",
+        "ae4fa676-8444-4982-a828-625ac7ecc3b2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "baace194-26d0-4518-8821-bfe19b564c12"
   ]
 }
