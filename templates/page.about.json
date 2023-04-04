@@ -55,10 +55,76 @@
       ],
       "settings": {
       }
+    },
+    "521781fd-a6f1-425f-8339-c2f2de958641": {
+      "type": "about-specialists",
+      "blocks": {
+        "template--18396144271643__521781fd-a6f1-425f-8339-c2f2de958641-168059508174f04e93-0": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-1.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Richard Ford"
+          }
+        },
+        "787efbf3-7dd9-4dad-a40f-d509f31a7ee8": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-2.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Edison Chong"
+          }
+        },
+        "ab659f5f-c6d0-4523-9e51-f1cc3a87f3e6": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-3.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Richard Ford"
+          }
+        },
+        "78a52dc1-195a-4461-a4a8-4c1e2a54a668": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-4.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Richard Ford"
+          }
+        },
+        "d207fe02-1863-4d3b-9c04-0e9ce8e0932f": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-5.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Richard Ford"
+          }
+        },
+        "45d51e25-0e86-4d57-9c85-6d776b88df5e": {
+          "type": "team-member",
+          "settings": {
+            "member-img": "shopify:\/\/shop_images\/team-member-6.jpg",
+            "member-designation": "Registered Massage Therapist",
+            "member-name": "Richard Ford"
+          }
+        }
+      },
+      "block_order": [
+        "template--18396144271643__521781fd-a6f1-425f-8339-c2f2de958641-168059508174f04e93-0",
+        "787efbf3-7dd9-4dad-a40f-d509f31a7ee8",
+        "ab659f5f-c6d0-4523-9e51-f1cc3a87f3e6",
+        "78a52dc1-195a-4461-a4a8-4c1e2a54a668",
+        "d207fe02-1863-4d3b-9c04-0e9ce8e0932f",
+        "45d51e25-0e86-4d57-9c85-6d776b88df5e"
+      ],
+      "settings": {
+        "section-heading": "Our Dedicated specialists",
+        "section-description": "Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at phaedrum."
+      }
     }
   },
   "order": [
     "main",
-    "baace194-26d0-4518-8821-bfe19b564c12"
+    "baace194-26d0-4518-8821-bfe19b564c12",
+    "521781fd-a6f1-425f-8339-c2f2de958641"
   ]
 }
