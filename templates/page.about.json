@@ -1,11 +1,18 @@
 {
-    "sections": {
-        "main": {
-            "type": "about-page",
-            "settings": {}
-        }
-    },
-    "order": [
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "about-page",
+      "settings": {
+        "bg-img": "shopify:\/\/shop_images\/bg-shape-3_4225350e-9168-46c4-88b6-3c93961c8019.png",
+        "heading": "Who we are",
+        "description": "<p>Our philosophy is to provide individualised services for every client. Would we come to Dialia RMT therapy as clients? The profession of Registered Massage Therapy (RMT) has enlarge to become a primary health care modality.<\/p><p>Massage therapy can be used for the treatment of both acute and chronic conditions. The purpose of massage is generally for the treatment of body stress or pain. Our services will help you reduce stress, relieve pain from headaches, reduce pain from injuries. Registered Massage Therapy is a safe and natural health care therapy that can help alleviate the discomfort associated with everyday. To book an appointment, please call us at:<\/p>",
+        "phone-number": "1-800-915-6270",
+        "heroslider-img": "shopify:\/\/shop_images\/heroslider-image-1_97dc981d-c9ce-447a-9645-c20dd6820275.jpg",
+        "hero-section-video": "https:\/\/youtu.be\/Sv511KEiIJQ"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
