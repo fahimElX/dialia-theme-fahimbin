@@ -9,6 +9,7 @@
                             </div>
                         </div>
                     </div>
+                    {% for block in section.blocks %}
                     <div class="row no-gutters justify-content-center">
                         <div class="col-xl-10 col-12">
                             <div class="tm-missvis">
@@ -17,15 +18,15 @@
                                         <a class="nav-link" id="bstab1-area1-tab" data-toggle="tab" href="#bstab1-area1"
                                             role="tab" aria-controls="bstab1-area1" aria-selected="true">
                                             <span class="tab-icon">
-                                                <img src="" alt="">
+                                                <img src="{{ block.settings.card-icon | img_url: '50x50' }}">
                                             </span>
-                                            <h5>Our Mission</h5>
+                                            <h5>{{ block.settings.card-title }}</h5>
                                         </a>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content tm-missvis-tabcontent" id="bstab1-ontent">
-                                    <div class="tab-pane show active" id="bstab1-area1" role="tabpanel" aria-labelledby="bstab1-area1-tab">
+                                    <div class="tab-pane show " id="bstab1-area1" role="tabpanel" aria-labelledby="bstab1-area1-tab">
                                         <div class="tm-missvis-sectionwrap">
                                             <div class="row">
                                                 <div class="col-lg-6">
@@ -34,7 +35,7 @@
                                                             <defs>
                                                                 <pattern id="attachedImage2" height="100%" width="100%"
                                                                     patternContentUnits="objectBoundingBox">
-                                                                    <image xlink:href="assets/images/others/mission-image-1.jpg"
+                                                                    <image xlink:href="{{ block.settings.card-image | img_url:'master' }}"
                                                                         preserveAspectRatio="none" width="1" height="1" />
                                                                 </pattern>
                                                             </defs>
@@ -44,12 +45,8 @@
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="tm-missvis-content">
-                                                        <h5>Our core and additional services</h5>
-                                                        <p>Our Vision is to promote a healthy lifestyle. To be a global
-                                                            health care leader by advancing the science and practice of
-                                                            massage therapy. In supporting our members and serving our
-                                                            stakeholders. In supporting our members and serving our
-                                                            stakeholders.</p>
+                                                        <h5>{{ block.settings.card-second-title }}</h5>
+                                                        <p>{{ block.settings.card-info }}</p>
                                                         <ul class="stylish-list-color">
                                                             <li>Physiotherapy</li>
                                                             <li>Chiropractic Care</li>
@@ -66,7 +63,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+                    {% endfor %}
                 </div>
             </div>
             <!--// Mission & Vision Area -->
@@ -89,12 +87,46 @@
                     ],
                     "blocks": [
                         {
-                            
+                            "name": "Single Card",
+                            "type": "single-card",
+                            "limit": 3,
+                            "settings": [
+                                {
+                                "type": "image_picker",
+                                "id": "card-icon",
+                                "label": "Card Icon"
+                                },{
+                                "type": "text",
+                                "id": "card-title",
+                                "label": "Card Heading",
+                                "default": "Lorem"
+                                },{
+                                "type": "image_picker",
+                                "id": "card-image",
+                                "label": "Card Image"
+                                },{
+                                        "type": "text",
+                                        "id": "card-second-title",
+                                        "label": "Card Secondary Heading",
+                                        "default": "Quick links"
+                                        },
+                                        {
+                                        "type": "text",
+                                        "id": "card-info",
+                                        "label": "Card Info",
+                                        "default": "Quick links"
+                                        }
+                            ]
                         }
                     ],
                     "presets": [
                         {
-                            "name": "Mission Section"
+                            "name": "Mission Section",
+                            "blocks": [
+                                {
+                                    "type": "single-card"
+                                }
+                            ]
                         }
                     ]
                 }
