@@ -3,6 +3,7 @@
     "pdp-section": {
       "type": "pdp-section",
       "settings": {
+        "collection": "adidas"
       }
     }
   },
