@@ -1,0 +1,175 @@
+<!-- Blog Area -->
+<div class="tm-section blogs-area bg-whtie tm-padding-section section-wrapper-{{section.id}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="sticky-sidebar">
+          <div class="tm-blog-list mt-50-reverse">
+            {% for article in blogs.news.articles %}
+              <!-- Single Blog -->
+              <div class="tm-blog mt-50">
+                <div class="tm-blog-top">
+                  <a href="{{ article.url }}">
+                    <img src="{{ article.image | img_url: 'master' }}">
+                  </a>
+                  <span class="tm-blog-date">{{ article.published_at }}</span>
+                </div>
+                <div class="tm-blog-bottom">
+                  <div class="tm-blog-meta">
+                    <span>
+                      <a href="{{ article.url }}">
+                        <i class="zmdi zmdi-account"></i>
+                        {{ article.author }}</a>
+                    </span>
+                    <span>
+                      <a href="blog-details.html">
+                        <i class="zmdi zmdi-comments"></i>
+                        Comments ({{ article.comments_count }})</a>
+                    </span>
+                    <span>
+                      <a href="{{ article.url }}">
+                        <i class="zmdi zmdi-folder"></i>
+                        Services</a>
+                    </span>
+                  </div>
+                  <h5 class="tm-blog-title">
+                    <a href="{{ article.url }}">
+                      {{ article.title }}</a>
+                  </h5>
+                  <p>
+                    {{ article.content }}
+                  </p>
+                  <a href="blog-details.html" class="tm-button tm-button-dark">Read more</a>
+                </div>
+              </div>
+              <!--// Single Blog -->
+            {% endfor %}
+          </div>
+
+          <div class="tm-pagination mt-50">
+            <ul>
+              <li>
+                <a href="blog.html">&lt; Prev</a>
+              </li>
+              <li class="is-active">
+                <a href="blog.html">1</a>
+              </li>
+              <li>
+                <a href="blog.html">2</a>
+              </li>
+              <li>
+                <a href="blog.html">3</a>
+              </li>
+              <li>
+                <a href="blog.html">Next &gt;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+          <div class="widgets widgets-blog">
+
+            <!-- Single Widget -->
+            <div class="single-widget widget-search">
+              <h5 class="widget-title">Search</h5>
+              <form action="#" class="widget-search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                  <i class="zmdi zmdi-search"></i>
+                </button>
+              </form>
+            </div>
+            <!--// Single Widget -->
+
+            <!-- Single Widget -->
+            <div class="single-widget widget-categories">
+              <h5 class="widget-title">Categories</h5>
+              <ul>
+                <li><a href="#">Moxibustion Therapy<span>(02)</span></a></li>
+                <li><a href="#">Headaches Treatments<span>(03)</span></a></li>
+                <li><a href="#">Auriculoterapia<span>(09)</span></a></li>
+                <li><a href="#">Falls Prevention Program<span>(04)</span></a></li>
+                <li><a href="#">Shockwave Therapy<span>(08)</span></a></li>
+                <li><a href="#">Intense Pulsed Light<span>(02)</span></a></li>
+              </ul>
+            </div>
+            <!--// Single Widget -->
+
+            <!-- Single Widget -->
+            <div class="single-widget widget-recentpost">
+              <h5 class="widget-title">Recent Posts</h5>
+              <ul>
+                {% for article in section.settings.blog.articles %}
+                  <li>
+                    <a href="{{ article.url }}" class="widget-recentpost-image">
+                      <img src="{{ article.image | img_url: 'medium'}}">
+                    </a>
+                    <div class="widget-recentpost-content">
+                      <h6>
+                        <a href="blog-details.html">{{ article.title }}</a>
+                      </h6>
+                      <span>{{ article.published_at | date: '%Y-%m-%d' }}</span>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!--// Single Widget -->
+
+            <!-- Single Widget -->
+            <div class="single-widget widget-tags">
+              <h5 class="widget-title">Tags</h5>
+              <ul>
+
+                {%- for tag in blog.all_tags -%}
+                  <li>
+                    <a href="{{ article.url  }}">{{ tag }}</a>
+                  </li>
+                {%- endfor -%}
+
+              </ul>
+            </div>
+            <!--// Single Widget -->
+
+            <!-- Single Widget -->
+            <div class="single-widget widget-archives">
+              <h5 class="widget-title">Archives</h5>
+              <ul>
+                <li><a href="blog.html">January 2019</a></li>
+                <li><a href="blog.html">March 2019</a></li>
+                <li><a href="blog.html">April 2019</a></li>
+                <li><a href="blog.html">July 2019</a></li>
+                <li><a href="blog.html">September 2019</a></li>
+                <li><a href="blog.html">October 2019</a></li>
+              </ul>
+            </div>
+            <!--// Single Widget -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog Area -->
+
+{% schema %}
+  {
+    "name": "Blog Page",
+    "settings": [
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Blog Page"
+      }
+    ]
+  }
+{% endschema %}
