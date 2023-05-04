@@ -1,5 +1,11 @@
 {
-    "name": "",
-    "sections": {},
-    "order": []
+    "name": "NP-Press Page Template",
+    "sections": {
+        "main": {
+            "type": "np-press"
+          }
+    },
+    "order": [
+        "main"
+    ]
 }
