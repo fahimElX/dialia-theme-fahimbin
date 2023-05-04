@@ -1,11 +1,12 @@
 {
-    "name": "NP-Press Page Template",
-    "sections": {
-        "main": {
-            "type": "np-title-block"
-          }
-    },
-    "order": [
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "np-press",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
