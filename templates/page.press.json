@@ -2,7 +2,7 @@
     "name": "NP-Press Page Template",
     "sections": {
         "main": {
-            "type": "np-press"
+            "type": "np-title-block"
           }
     },
     "order": [
