@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "np-press",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
