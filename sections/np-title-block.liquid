@@ -1,7 +1,91 @@
+<section class="section-wrapper-{{ section.id }}">
+  {% for block in section.blocks %}
+    {%  case block.type %} 
+        {% when "main-title" %}
+          <div class="block-{{block.id}}">
+            <div class="main-section-inner">
+              <div class="main-tittle-div">
+                <p class="main-title">
+                  {{ block.settings.press-main-title }}
+                </p>
+              </div>
+              <div class="main-description-div">
+                <p class="main-description">
+                  {{ block.settings.press-main-title }}  
+                </p>
+              </div>
+            </div>
+          </div>
+   {% endcase %} 
+  {% endfor %}
+</section>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Title Block",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Main Title",
+        "type": "main-title",
+        "settings": [
+          {
+  "type": "text",
+  "id": "press-main-title",
+  "label": "Main Heading",
+  "default": "Press"
+},
+{
+  "type": "textarea",
+  "id": "press-main-description",
+  "label": "Description",
+  "default": "Write something"
+},
+{
+  "type": "range",
+  "id": "margin-top-bottom",
+  "min": 5,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "Margin Top Bottom",
+  "default": 10
+}
+
+        ]
+      },{
+        "name": "Spacer",
+        "type": "spacer",
+        "settings": [
+          {
+  "type": "range",
+  "id": "space",
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "unit": "px",
+  "label": "Space",
+  "default": 10
+}
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Title Block",
+        "blocks": [
+          {
+            "type": "main-title"
+          },
+          {
+            "type": "spacer"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
