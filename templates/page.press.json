@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "np-press",
+      "type": "np-title-block",
       "settings": {
       }
     }
