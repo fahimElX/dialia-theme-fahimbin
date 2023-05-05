@@ -2,6 +2,27 @@
   "sections": {
     "main": {
       "type": "np-title-block",
+      "blocks": {
+        "ab3d4d1f-cf8d-4b1f-8fb3-fcbb264f2fca": {
+          "type": "main-title",
+          "settings": {
+            "press-main-title": "Press",
+            "press-main-description": "For UK press enquiries, please speak to Melisa with Purple PR at melisa.mert@purplepr.com. For US press enquiries, reach out to Jill with Purple PR at jill.meisner@purplepr.com",
+            "margin-top-bottom": 46
+          }
+        },
+        "36f29e4a-088d-4326-934e-8eb506d90272": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 160,
+            "spacer-height-mobile": 65
+          }
+        }
+      },
+      "block_order": [
+        "ab3d4d1f-cf8d-4b1f-8fb3-fcbb264f2fca",
+        "36f29e4a-088d-4326-934e-8eb506d90272"
+      ],
       "settings": {
       }
     }
