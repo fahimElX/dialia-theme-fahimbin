@@ -25,9 +25,41 @@
       ],
       "settings": {
       }
+    },
+    "8a5cde01-e7d5-4081-9107-6491e301bf5a": {
+      "type": "np-product-blog",
+      "blocks": {
+        "template--18819583508763__8a5cde01-e7d5-4081-9107-6491e301bf5a-1683454743d53bdf56-0": {
+          "type": "product-blog-card",
+          "settings": {
+            "product-image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "blog-author": "Harper’s Bazaar:",
+            "blog-title": "Unstitched: Ninety Percent",
+            "button-link": "shopify:\/\/pages\/press",
+            "button-text": "read"
+          }
+        },
+        "683e7ea5-2580-434b-90eb-45bf539e23fe": {
+          "type": "product-blog-card",
+          "settings": {
+            "product-image": "shopify:\/\/shop_images\/Mask_group.png",
+            "blog-author": "Vogue:",
+            "blog-title": "From Slips To Souped-Up Maxis: A Definitive Guide To 2023’s Key Dress Trends",
+            "button-link": "shopify:\/\/pages\/press",
+            "button-text": "read"
+          }
+        }
+      },
+      "block_order": [
+        "template--18819583508763__8a5cde01-e7d5-4081-9107-6491e301bf5a-1683454743d53bdf56-0",
+        "683e7ea5-2580-434b-90eb-45bf539e23fe"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "8a5cde01-e7d5-4081-9107-6491e301bf5a"
   ]
 }
