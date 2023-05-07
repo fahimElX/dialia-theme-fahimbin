@@ -1,0 +1,229 @@
+<section class="section-wrapper-{{ section.id }} np-page-width">
+  <div class="block-{{block.id}}">
+    <div class="product-blog-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "product-blog-card" %}
+          <div class="product-blog-card">
+            <div class="product-img">
+              <img src="{{ block.settings.product-image | img_url: 'master'}} " alt="product-img">
+            </div>
+            <div class="product-info-wrapper">
+              <div class="product-info">
+                <p class="product-blog-author">
+                  {{ block.settings.blog-author }}
+                </p>
+                <p class="product-blog-title">
+                  {{ block.settings.blog-title }}
+                </p>
+              </div>
+              <div class="read-btn">
+                <a href="{{ block.settings.button-link }}">
+                  {{ block.settings.button-text }}
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Product Blog",
+    "blocks": [
+      {
+        "name": "Product Blog Card",
+        "type": "product-blog-card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "product-image",
+            "label": "Image of Product"
+          },
+          {
+            "type": "text",
+            "id": "blog-author",
+            "label": "Blog's Megazine Name",
+            "default": "Lorem"
+          },
+          {
+            "type": "text",
+            "id": "blog-title",
+            "label": "Blog Title",
+            "default": "Lorem"
+          },
+          {
+            "type": "url",
+            "id": "button-link",
+            "label": "Button link"
+          }, {
+            "type": "text",
+            "id": "button-text",
+            "label": "Button Text",
+            "default": "Lorem"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Blog",
+        "blocks": [
+          {
+            "type": "product-blog-card"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% style %}
+  .np-page-width {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .product-blog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 0 20px;
+  }
+  .product-blog-card {
+    width: 33%;
+    margin-bottom: 65px;
+  }
+  .product-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .product-info {
+    display: flex;
+    gap: 12px;
+  }
+  .product-blog-author {
+    font-family: 'Silvana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: justify;
+    letter-spacing: -0.01em;
+    color: #2B2725;
+  }
+  .product-blog-title {
+    font-family: 'Intervogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2B2725;
+    min-height: 82px;
+    margin-bottom: 0;
+    max-width: 330px;
+
+  }
+  .read-btn a {
+    padding: 12px 70px;
+    border: 0.75px solid #2B2725;
+    font-family: 'Intervogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.5px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2B2725;
+  }
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "product-blog-card" %}
+
+    {% endcase %}
+  {% endfor %}
+
+
+
+  @media(max-width: 768px) {
+    .np-page-width {
+      padding: 0 12px;
+    }
+    .product-blog-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 50px;
+      padding: 0;
+    }
+    .product-blog-card {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .product-info-wrapper {
+      margin-top: 20px;
+      gap: 20px;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-blog-author {
+      font-family: 'Silvana';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'ordn' on;
+      color: #2B2725;
+    }
+    .product-blog-title {
+      font-family: 'Intervogue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #2B2725;
+      min-height: unset;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+    .read-btn a {
+      padding: 12px 70px;
+      border: 0.75px solid #2B2725;
+      font-family: 'Intervogue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12.5px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #2B2725;
+    }
+
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "product-blog-card" %}
+
+      {% endcase %}
+    {% endfor %}
+
+  }
+{% endstyle %}
