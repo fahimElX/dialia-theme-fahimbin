@@ -1,5 +1,5 @@
 <section class="section-wrapper-{{ section.id }} np-page-width">
-  <div class="block-{{block.id}}">
+  <div class="block-{{ block.id }}">
     <div class="product-blog-wrapper">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -17,11 +17,11 @@
                   {{ block.settings.blog-title }}
                 </p>
               </div>
-              <div class="read-btn">
-                <a href="{{ block.settings.button-link }}">
-                  {{ block.settings.button-text }}
-                </a>
-              </div>
+
+              <a class="read-btn" href="{{ block.settings.button-link }}">
+                {{ block.settings.button-text }}
+              </a>
+
             </div>
           </div>
         {% endcase %}
@@ -89,21 +89,23 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+  p {
+    margin-bottom: 0;
+  }
   .product-blog-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    padding: 0 20px;
   }
   .product-blog-card {
-    width: 33%;
     margin-bottom: 65px;
   }
   .product-info-wrapper {
+    margin-top: 15px;
+    min-height: 175px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
   }
   .product-info {
     display: flex;
@@ -128,12 +130,11 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #2B2725;
-    min-height: 82px;
     margin-bottom: 0;
     max-width: 330px;
 
   }
-  .read-btn a {
+  .read-btn {
     padding: 12px 70px;
     border: 0.75px solid #2B2725;
     font-family: 'Intervogue';
@@ -145,14 +146,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #2B2725;
+    max-width: 234px;
   }
-
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when "product-blog-card" %}
-
-    {% endcase %}
-  {% endfor %}
 
 
 
@@ -161,24 +156,23 @@
       padding: 0 12px;
     }
     .product-blog-wrapper {
-      display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      gap: 50px;
-      padding: 0;
+      gap: 0;
     }
     .product-blog-card {
+      margin-bottom: 65px;
+      padding: 0 12px;
+    }
+    .product-img img {
       width: 100%;
-      margin-bottom: 0;
     }
     .product-info-wrapper {
       margin-top: 20px;
-      gap: 20px;
+      min-height: unset;
+      width: 100%;
     }
-    .product-info {
-      display: flex;
-      flex-direction: column;
-    }
+    .product-info {}
 
     .product-blog-author {
       font-family: 'Silvana';
@@ -204,7 +198,7 @@
       margin-bottom: 0;
       max-width: 100%;
     }
-    .read-btn a {
+    .read-btn {
       padding: 12px 70px;
       border: 0.75px solid #2B2725;
       font-family: 'Intervogue';
@@ -218,12 +212,7 @@
       color: #2B2725;
     }
 
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when "product-blog-card" %}
 
-      {% endcase %}
-    {% endfor %}
 
   }
 {% endstyle %}
