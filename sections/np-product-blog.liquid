@@ -93,14 +93,21 @@
     margin-bottom: 0;
   }
   .product-blog-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 4px;
   }
   .product-blog-card {
     margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-img img {
+    width: 100%;
   }
   .product-info-wrapper {
+    flex-grow: 1;
     margin-top: 15px;
     min-height: 175px;
     display: flex;
@@ -135,6 +142,7 @@
 
   }
   .read-btn {
+    margin-top: auto;
     padding: 12px 70px;
     border: 0.75px solid #2B2725;
     font-family: 'Intervogue';
@@ -151,14 +159,14 @@
 
 
 
-  @media(max-width: 768px) {
+  @media(max-width: 767px) {
     .np-page-width {
       padding: 0 12px;
     }
     .product-blog-wrapper {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      gap: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     }
     .product-blog-card {
       margin-bottom: 65px;
@@ -172,7 +180,9 @@
       min-height: unset;
       width: 100%;
     }
-    .product-info {}
+    .product-info {
+      display: unset;
+    }
 
     .product-blog-author {
       font-family: 'Silvana';
@@ -195,7 +205,7 @@
       text-transform: uppercase;
       color: #2B2725;
       min-height: unset;
-      margin-bottom: 0;
+      margin: 20px 0;
       max-width: 100%;
     }
     .read-btn {
@@ -210,6 +220,7 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #2B2725;
+      max-width: unset;
     }
 
 
