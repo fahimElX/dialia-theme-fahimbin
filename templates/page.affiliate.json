@@ -67,11 +67,47 @@
             "show_button": false,
             "hide-border": false
           }
+        },
+        "b1599b07-6cee-4573-ae78-6a748dae5df3": {
+          "type": "text-with-list",
+          "settings": {
+            "title": "What do I need to do as an affiliate?",
+            "list-item": "<ul><li>Promote Ninety Percent by placing our ads, banners and links on your website.<\/li><li> Use our product data feed to promote our products to your readers and visitors. <\/li><li>Share our story and responsible practices to help promote a more mindful approach to shopping and the fashion industry. <\/li><\/ul>",
+            "font-size-title": 26,
+            "title-color": "#2B2725",
+            "title-font-style": false,
+            "font-size-description": 16,
+            "description-color": "#2B2725",
+            "description-font-style": false,
+            "btn-text": "Apply now",
+            "button_link": "",
+            "show_button": false,
+            "hide-border": false
+          }
+        },
+        "220989a3-25fb-4ed1-a40a-a10fab6725ae": {
+          "type": "text-with-description",
+          "settings": {
+            "title": "Apply Now",
+            "description": "<p>Fill out the Publisher Registration form. We'll review your site for suitability and get back to you within five business days to let you know the outcome of your application.<\/p><p>If you’re already a registered publisher on the Rakuten Affiliate Network, you’re most welcome to apply directly to our program by searching ‘Ninety Percent’ or our Merchant ID which is 45032 in your publisher dashboard.<\/p>",
+            "font-size-title": 26,
+            "title-color": "#2B2725",
+            "title-font-style": false,
+            "font-size-description": 16,
+            "description-color": "#2B2725",
+            "description-font-style": false,
+            "btn-text": "Apply now",
+            "button_link": "",
+            "show_button": true,
+            "hide-border": false
+          }
         }
       },
       "block_order": [
         "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-0",
-        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-1"
+        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-1",
+        "b1599b07-6cee-4573-ae78-6a748dae5df3",
+        "220989a3-25fb-4ed1-a40a-a10fab6725ae"
       ],
       "settings": {
       }
