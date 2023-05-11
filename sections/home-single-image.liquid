@@ -3,19 +3,25 @@
     {% case block.type %}
       {% when "image-block" %}
       <div class="image-block-inner block-width-{{ block.id }} ">
-        <img
-          class="desktop-image"
-          src="{{ block.settings.desktop-image | img_url: 'master' }}"
-          alt="">
-        <img
-          class="mobile-image"
-          src="{{ block.settings.mobile-image | img_url: 'master' }}"
-          alt="">
+        <a href="{{ block.settings.img-link }}">
+          <img
+            class="desktop-image"
+            src="{{ block.settings.desktop-image | img_url: 'master' }}"
+            alt="">
+        </a>
+        <a href="{{ block.settings.img-link }}">
+          <img
+            class="mobile-image"
+            src="{{ block.settings.mobile-image | img_url: 'master' }}"
+            alt="">
+        </a>
         <div class="overlay-div">
-          <p class="overlay-text">New Season</p>
-          <a href="#" class="overlay-link">
-            Shop
-          </a>
+          <p class="overlay-text">{{ block.settings.overlay-text }}</p>
+          <div class="overlay-link-div">
+            <a href="{{ block.settings.overlay-link-url }}" class="overlay-link">
+              {{ block.settings.overlay-link-text }}
+            </a>
+          </div>
         </div>
       </div>
 
@@ -35,7 +41,48 @@
     padding: 0;
   }
 
+  .image-block-inner {
+    position: relative;
+  }
 
+  .overlay-div {
+    position: absolute;
+    bottom: 7.6%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .overlay-text {
+    font-family: 'Silvana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .overlay-link-div {
+    display: flex;
+    justify-content: center;
+  }
+  .overlay-div .overlay-link-div .overlay-link {
+    display: block;
+    text-decoration: none;
+    font-family: 'Intervogue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+  }
+  .overlay-div .overlay-link-div .overlay-link:hover {
+    border-bottom: 1px solid #FFFFFF;
+  }
   {% for block in section.blocks %}
     {% case block.type %}
       {% when "image-block" %}
@@ -43,7 +90,7 @@
         width: 100%;
         height: 100%;
         padding: 0 {{ block.settings.padding}}px;
-        position: relative;
+
       }
 
       .section-wrapper-{{ section.id }}.block-width-{{ block.id }}.desktop-image {
@@ -54,11 +101,7 @@
       .home-single-image-section {
         animation: fade-in{{ block.settings.delay-time }}s ease 0s forwards;
       }
-      .overlay-div {
-        position: absolute;
-        bottom: 7.6%;
-        right: 50%;
-      }
+
       {% if block.settings.change-aspect-ratio %}
         .section-wrapper-{{ section.id }}.block-width-{{ block.id }}.desktop-image {
           width: 100%;
@@ -143,6 +186,24 @@
             "id": "mobile-image"
           },
           {
+            "type": "url",
+            "id": "img-link",
+            "label": "Image Redirect link"
+          }, {
+            "type": "text",
+            "id": "overlay-text",
+            "label": "Overlay Text",
+            "default": "Lorem"
+          }, {
+            "type": "text",
+            "id": "overlay-link-text",
+            "label": "Overlay Link Text",
+            "default": "Lorem"
+          }, {
+            "type": "url",
+            "id": "overlay-link-url",
+            "label": "Overlay link"
+          }, {
             "type": "range",
             "id": "delay-time",
             "label": "Image Delay Time",
