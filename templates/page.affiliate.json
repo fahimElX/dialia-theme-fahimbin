@@ -28,7 +28,7 @@
         "description-font-style": false,
         "btn-text": "",
         "button_link": "",
-        "show_button": true
+        "show_button": false
       }
     },
     "9b68dfdb-dc72-4665-adac-70eee3d767d5": {
@@ -47,7 +47,7 @@
             "description-font-style": false,
             "btn-text": "Apply now",
             "button_link": "",
-            "show_button": true,
+            "show_button": false,
             "hide-border": false
           }
         },
@@ -64,7 +64,7 @@
             "description-font-style": false,
             "btn-text": "Apply now",
             "button_link": "",
-            "show_button": true,
+            "show_button": false,
             "hide-border": false
           }
         }
