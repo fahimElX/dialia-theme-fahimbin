@@ -1,11 +1,84 @@
 {
   "sections": {
-    "main":{
-        "type": "hero-affiliation"
+    "main": {
+      "type": "hero-affiliation",
+      "blocks": {
+        "6f49d4ad-af4a-4705-a4a2-5080a48b7ce8": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 65
+          }
+        }
+      },
+      "block_order": [
+        "6f49d4ad-af4a-4705-a4a2-5080a48b7ce8"
+      ],
+      "settings": {
+        "hero-title": "Join the Ninety Percent Affiliate Programme",
+        "sub-title": "Through the Ninety Percent Affiliate Programme, selected fashion and lifestyle websites can earn a commission by promoting Ninety Percent products.",
+        "description": "<p>If your application is accepted, you will be able to earn up to 6% commission on valid sales referred by your website. Get started by filling out our affiliate application here.<\/p>",
+        "font-size-title": 100,
+        "title-color": "#2B2725",
+        "title-font-style": false,
+        "font-size-subtitle": 26,
+        "subtitle-color": "#2B2725",
+        "subtitle-font-style": false,
+        "font-size-description": 16,
+        "description-color": "#2B2725",
+        "description-font-style": false,
+        "btn-text": "",
+        "button_link": "",
+        "show_button": false
+      }
+    },
+    "9b68dfdb-dc72-4665-adac-70eee3d767d5": {
+      "type": "affiliation-description-section",
+      "blocks": {
+        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-0": {
+          "type": "text-with-description",
+          "settings": {
+            "title": "How it works",
+            "description": "<p>The program is simple, free of charge and rewards you with a commission on every sale generated through your site. You'll be invited to browse the extensive range of Ninety Percent links and banners that you can use on your website. You will also have access to our full product catalogue to promote on your website.<\/p>",
+            "font-size-title": 26,
+            "title-color": "#2B2725",
+            "title-font-style": false,
+            "font-size-description": 16,
+            "description-color": "#2B2725",
+            "description-font-style": false,
+            "btn-text": "Apply now",
+            "button_link": "",
+            "show_button": true,
+            "hide-border": false
+          }
+        },
+        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-1": {
+          "type": "text-with-list",
+          "settings": {
+            "title": "What are the benefits of joining?",
+            "list-item": "<p>Once accepted into the Ninety Percent Affiliate Programme, you can benefit from the following perks: Earn 6% commission on all valid sales<\/p><ul><li>Earn 6% commission on all valid sales<\/li><li>30-day cookie period<\/li><li>14 days return policy<\/li><\/ul>",
+            "font-size-title": 26,
+            "title-color": "#2B2725",
+            "title-font-style": false,
+            "font-size-description": 16,
+            "description-color": "#2B2725",
+            "description-font-style": false,
+            "btn-text": "Apply now",
+            "button_link": "",
+            "show_button": true,
+            "hide-border": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-0",
+        "template--18907690271003__9b68dfdb-dc72-4665-adac-70eee3d767d5-16838113881ce937ff-1"
+      ],
+      "settings": {
+      }
     }
-   
   },
   "order": [
-    "main"
+    "main",
+    "9b68dfdb-dc72-4665-adac-70eee3d767d5"
   ]
 }
