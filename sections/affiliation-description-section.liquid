@@ -10,7 +10,7 @@
                 {{ block.settings.description }}
             </div>
             <div class="affiliation-button {% if block.settings.show_button == false %}hide-btn{% endif %}">
-                <a class="affiliation-btn" href="{{ block.settings.button_link }}">{{ block.settings.btn-text }}</a>
+                <a class="affiliation-btn" target="_blank" href="{{ block.settings.button_link }}">{{ block.settings.btn-text }}</a>
             </div>
             <div class="bottom-border {% if block.settings.hide-border == true %}hide-border{% endif %}"></div>
         </div>
@@ -24,7 +24,7 @@
                 {{ block.settings.list-item }}
             </div>
             <div class="affiliation-button {% if block.settings.show_button == false %}hide-btn{% endif %}">
-                <a class="affiliation-btn" href="{{ block.settings.button_link }}">{{ block.settings.btn-text }}</a>
+                <a class="affiliation-btn" target="_blank" href="{{ block.settings.button_link }}">{{ block.settings.btn-text }}</a>
             </div>
             <div class="bottom-border {% if block.settings.hide-border == true %}hide-border{% endif %}"></div>
         </div>
@@ -181,6 +181,7 @@
                         text-align: justify;
                         letter-spacing: 0.02em;
                     }
+                    
                 }
                 @media only screen and (max-width: 360px){
                     .description-section-{{ section.id }}.affiliation .list-block-{{ block.id }} .block-title p{
@@ -225,7 +226,7 @@
     max-width: 581px;
     width: 100%;
     border-bottom: 1px solid #2B2725;
-    padding-top: 67px;
+    padding-top: 52px;
 }
 .description-section-{{ section.id }}.affiliation p:not(:last-of-type){
     padding-bottom: 15px;
