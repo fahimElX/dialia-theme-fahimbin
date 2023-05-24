@@ -1,36 +1,5 @@
 {
   "sections": {
-    "4fc912c4-adc4-4d07-bee2-61c320ad6cce": {
-      "type": "home-single-image",
-      "blocks": {
-        "template--18819583508763__4fc912c4-adc4-4d07-bee2-61c320ad6cce-168379363440f7da31-0": {
-          "type": "image-block",
-          "settings": {
-            "padding": 160,
-            "desktop-image": "shopify:\/\/shop_images\/PHOTO-2023-05-02-19-29-47_1_2_97a14c20-caf3-4a5e-a49d-4466a896b95f.png",
-            "mobile-image": "shopify:\/\/shop_images\/PHOTO-2023-05-02-19-29-47_1_3_4b6ab73a-7d82-49ea-8ce0-2d9f186d3973.png",
-            "img-link": "shopify:\/\/pages\/press",
-            "overlay-text": "New Season",
-            "overlay-link-text": "Shop",
-            "overlay-link-url": "shopify:\/\/pages\/press",
-            "delay-time": 3,
-            "change-aspect-ratio": false
-          }
-        },
-        "template--18819583508763__4fc912c4-adc4-4d07-bee2-61c320ad6cce-168379363440f7da31-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--18819583508763__4fc912c4-adc4-4d07-bee2-61c320ad6cce-168379363440f7da31-0",
-        "template--18819583508763__4fc912c4-adc4-4d07-bee2-61c320ad6cce-168379363440f7da31-1"
-      ],
-      "settings": {
-      }
-    },
     "main": {
       "type": "np-title-block",
       "blocks": {
@@ -56,86 +25,9 @@
       ],
       "settings": {
       }
-    },
-    "8a5cde01-e7d5-4081-9107-6491e301bf5a": {
-      "type": "np-product-blog",
-      "blocks": {
-        "template--18819583508763__8a5cde01-e7d5-4081-9107-6491e301bf5a-1683454743d53bdf56-0": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group_5.png",
-            "blog-author": "Harper’s Bazaar:",
-            "blog-title": "Unstitched: Ninety Percent",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        },
-        "683e7ea5-2580-434b-90eb-45bf539e23fe": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group.png",
-            "blog-author": "Vogue:",
-            "blog-title": "From Slips To Souped-Up Maxis: A Definitive Guide To 2023’s Key Dress Trends",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        },
-        "1f415458-fab1-4122-8e7e-af1b3eb78224": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group_1.png",
-            "blog-author": "Porter:",
-            "blog-title": "THIS GO-TO BRAND FOR ELEVATED BASICS JUST CREATED THE PERFECT BLACK DRESS",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        },
-        "1370c4b1-62b8-437b-9f2b-fc141efdf7b7": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group_2.png",
-            "blog-author": "Drapers:",
-            "blog-title": "Drapers Sustainable Fashion Week: the brands to know",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        },
-        "1b3c68f4-093c-4569-bd91-ae874b948f8d": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group_3.png",
-            "blog-author": "Luxury London:",
-            "blog-title": "The Shopping List: Brilliant things to buy this week",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        },
-        "41c4e372-f79f-48a4-bcc2-6f72b1ed8660": {
-          "type": "product-blog-card",
-          "settings": {
-            "product-image": "shopify:\/\/shop_images\/Mask_group_4.png",
-            "blog-author": "Miami Herald:",
-            "blog-title": "Loud Is Out: Quiet Luxury is In, a look at 10 essential looks to shop",
-            "button-link": "shopify:\/\/pages\/press",
-            "button-text": "read"
-          }
-        }
-      },
-      "block_order": [
-        "template--18819583508763__8a5cde01-e7d5-4081-9107-6491e301bf5a-1683454743d53bdf56-0",
-        "683e7ea5-2580-434b-90eb-45bf539e23fe",
-        "1f415458-fab1-4122-8e7e-af1b3eb78224",
-        "1370c4b1-62b8-437b-9f2b-fc141efdf7b7",
-        "1b3c68f4-093c-4569-bd91-ae874b948f8d",
-        "41c4e372-f79f-48a4-bcc2-6f72b1ed8660"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "4fc912c4-adc4-4d07-bee2-61c320ad6cce",
-    "main",
-    "8a5cde01-e7d5-4081-9107-6491e301bf5a"
+    "main"
   ]
 }
