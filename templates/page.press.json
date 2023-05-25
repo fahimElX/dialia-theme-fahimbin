@@ -45,7 +45,7 @@
         "template--18819583508763__7938e8e5-cdc3-41a2-a089-d0360ba2de9c-1685014798f5e1eec1-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height-desktop": 10,
+            "spacer-height-desktop": 115,
             "spacer-height-mobile": 10
           }
         }
@@ -74,7 +74,7 @@
         "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height-desktop": 115,
+            "spacer-height-desktop": 170,
             "spacer-height-mobile": 10
           }
         }
