@@ -33,7 +33,13 @@
           "type": "double-image",
           "settings": {
             "image-first": "shopify:\/\/shop_images\/1_1.png",
-            "image-second": "shopify:\/\/shop_images\/2_20819.png"
+            "image-second": "shopify:\/\/shop_images\/2_20819.png",
+            "blog-author": "ex: Vogue, Times",
+            "blog-title": "Lorem Lorem",
+            "font_size_author": 16,
+            "font_size_title": 16,
+            "blog-text-color": "#000000",
+            "hide-blog-details": false
           }
         }
       },
@@ -41,16 +47,57 @@
         "7c2b8f9a-d50b-4a80-aa54-5810af0c75c0"
       ],
       "settings": {
-        "blog-author": "HARPER’S BAZAAR",
-        "blog-title": "Unstitched: Ninety Percent, 2023",
-        "font_size_author": 18,
-        "font_size_title": 16,
-        "blog-text-color": "#2b2725"
+      }
+    },
+    "02aa041f-d23a-4739-8682-68ad53ba8f31": {
+      "type": "np-press-single-img",
+      "blocks": {
+        "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-0": {
+          "type": "double-image",
+          "settings": {
+            "image-first": "shopify:\/\/shop_images\/Anne-Hathaway-Vogue-Hong-Kong-November-2022-Cover02_1.png",
+            "image-second": "shopify:\/\/shop_images\/Vogue_Hong_Kong_043_Feature_v2-1_1.png",
+            "blog-author": "ex: Vogue, Times",
+            "blog-title": "Lorem Lorem",
+            "font_size_author": 16,
+            "font_size_title": 16,
+            "blog-text-color": "#000000",
+            "hide-blog-details": true
+          }
+        },
+        "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 5,
+            "spacer-height-mobile": 10
+          }
+        },
+        "6900edca-fc33-45a4-be85-e733406c4170": {
+          "type": "double-image",
+          "settings": {
+            "image-first": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1.png",
+            "image-second": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1_1.png",
+            "blog-author": "ex: Vogue, Times",
+            "blog-title": "Lorem Lorem",
+            "font_size_author": 16,
+            "font_size_title": 16,
+            "blog-text-color": "#000000",
+            "hide-blog-details": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-0",
+        "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-1",
+        "6900edca-fc33-45a4-be85-e733406c4170"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
     "main",
-    "b9a739a4-4f2a-421b-88ec-dcf5fc06ec51"
+    "b9a739a4-4f2a-421b-88ec-dcf5fc06ec51",
+    "02aa041f-d23a-4739-8682-68ad53ba8f31"
   ]
 }
