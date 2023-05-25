@@ -79,11 +79,33 @@
             "spacer-height-desktop": 5,
             "spacer-height-mobile": 10
           }
+        },
+        "a7688d0c-9402-426e-bdae-c4a9184dbccb": {
+          "type": "double-image",
+          "settings": {
+            "image-first": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1.png",
+            "image-second": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1_1.png",
+            "blog-author": "Vogue Hong kong",
+            "blog-title": "Fashion with Compassion, 2023",
+            "font_size_author": 18,
+            "font_size_title": 16,
+            "blog-text-color": "#2b2725",
+            "hide-blog-details": false
+          }
+        },
+        "c31ffc29-4787-448e-a0e7-175650cd3f07": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 170,
+            "spacer-height-mobile": 10
+          }
         }
       },
       "block_order": [
         "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-0",
-        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1"
+        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1",
+        "a7688d0c-9402-426e-bdae-c4a9184dbccb",
+        "c31ffc29-4787-448e-a0e7-175650cd3f07"
       ],
       "settings": {
       }
