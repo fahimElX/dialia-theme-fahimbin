@@ -1,32 +1,35 @@
 <section class="section-wrapper-{{ section.id }} np-page-width">
   <div class="press-page-wrapper">
     <div class="blog-section-inner">
-      <div class="blog-post-wrapper">
         {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'double-image' %}
-            <div class="blog">
-              <a href="#">
-                <div class="blog-img">
-                  <img src="{{ block.settings.image-first | img_url: 'master'}}" alt="first image">
-                </div>
-              </a>
-            </div>
+            {% case block.type %}
+                {% when 'double-image' %}
+                    <div class="blog-post-wrapper">
+                        <div class="blog">
+                            <a href="#">
+                                <div class="blog-img">
+                                <img src="{{ block.settings.image-first | img_url: 'master'}}" alt="first image">
+                                </div>
+                            </a>
+                        </div>
 
-            <div class="blog">
-              <a href="#">
-                <div class="blog-img">
-                  <img src="{{ block.settings.image-second | img_url: 'master'}}" alt="second image">
-                </div>
-              </a>
-            </div>
-          </div>
-        {% endcase %}
-      {% endfor %}
-      <div class="blog-details-wrapper">
-        <p class="blog-author">{{ section.settings.blog-author }}</p>
-        <p class="blog-title">{{ section.settings.blog-title }}</p>
-      </div>
+                        <div class="blog">
+                            <a href="#">
+                                <div class="blog-img">
+                                <img src="{{ block.settings.image-second | img_url: 'master'}}" alt="second image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-details-wrapper">
+                        <p class="blog-author">{{ block.settings.blog-author }}</p>
+                        <p class="blog-title">{{ block.settings.blog-title }}</p>
+                    </div>
+
+                {% when 'spacer-block' %}
+                    <div class="spacer-{{ block.id }}"></div>
+            {% endcase %}
+        {% endfor %}
     </div>
   </div>
 </section>
@@ -34,67 +37,106 @@
 {% schema %}
   {
     "name": "Double Image Blog",
-    "settings": [
-      {
-        "type": "text",
-        "id": "blog-author",
-        "label": "Megazine Name",
-        "default": "ex: Vogue, Times"
-      },
-      {
-        "type": "text",
-        "id": "blog-title",
-        "label": "Blog Title",
-        "default": "Lorem Lorem"
-      },
-      {
-        "type": "range",
-        "id": "font_size_author",
-        "min": 12,
-        "max": 60,
-        "step": 1,
-        "unit": "px",
-        "label": "Font size For Author",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "font_size_title",
-        "min": 12,
-        "max": 60,
-        "step": 1,
-        "unit": "px",
-        "label": "Font size For Blog Title",
-        "default": 16
-      }, {
-        "type": "color",
-        "id": "blog-text-color",
-        "label": "Blog text Color",
-        "default": "#000000"
-      }
-
-
-    ],
+    "settings": [],
     "blocks": [
       {
         "name": "Double Image",
         "type": "double-image",
         "settings": [
+            {
+                "type": "image_picker",
+                "id": "image-first",
+                "label": "Add First Image "
+            }, 
+            {
+                "type": "image_picker",
+                "id": "image-second",
+                "label": "Add Second Image "
+            },
+            {
+                "type": "text",
+                "id": "blog-author",
+                "label": "Megazine Name",
+                "default": "ex: Vogue, Times"
+            },
+            {
+                "type": "text",
+                "id": "blog-title",
+                "label": "Blog Title",
+                "default": "Lorem Lorem"
+            },
+            {
+                "type": "range",
+                "id": "font_size_author",
+                "min": 12,
+                "max": 60,
+                "step": 1,
+                "unit": "px",
+                "label": "Font size For Author",
+                "default": 16
+            },
+            {
+                "type": "range",
+                "id": "font_size_title",
+                "min": 12,
+                "max": 60,
+                "step": 1,
+                "unit": "px",
+                "label": "Font size For Blog Title",
+                "default": 16
+            }, 
+            {
+                "type": "color",
+                "id": "blog-text-color",
+                "label": "Blog text Color",
+                "default": "#000000"
+            }, 
+            {
+                "type": "checkbox",
+                "id": "hide-blog-details",
+                "label": "Hide Blog Details",
+                "default": false
+            }
+        ]
+      }, 
+      {
+        "name": "Spacer Block",
+        "type": "spacer-block",
+        "settings": [
           {
-            "type": "image_picker",
-            "id": "image-first",
-            "label": "Add First Image "
+            "type": "range",
+            "id": "spacer-height-desktop",
+            "min": 0,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Spacer Height Desktop",
+            "default": 10
           }, {
-            "type": "image_picker",
-            "id": "image-second",
-            "label": "Add Second Image "
+            "type": "range",
+            "id": "spacer-height-mobile",
+            "min": 0,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Spacer Height Mobile",
+            "default": 10
           }
+
         ]
       }
     ],
     "presets": [
       {
-        "name": "Double Image Blog"
+        "name": "Double Image Blog",
+        "blocks": [
+          {
+            "type": "double-image"
+          }, {
+            "type": "spacer-block"
+          }
+
+        ]
       }
     ]
   }
@@ -110,36 +152,51 @@
     display: flex;
     gap: 30px;
   }
-  .blog-author {
-    font-family: 'Intervogue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: {{ section.settings.font_size_author }}px;
-    line-height: 27px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: {{ section.settings.blog-text-color }};
-  }
-  .blog-title {
-    font-family: 'Silvana';
-    font-style: normal;
-    font-weight: 400;
-    font-size: {{ section.settings.font_size_title }}px;
-    line-height: 27px;
-    text-align: justify;
-    letter-spacing: -0.01em;
-    color: {{ section.settings.blog-text-color }};
-  }
+  
+  
+
   {% for block in section.blocks %}
     {% case block.type %}
-      {% when 'double-image' %}
-      .blog {
-        flex: 1;
-      }
-      .blog-img {
-        padding: 52px 42px;
-        background: rgba(43, 39, 37, 0.1);
-      }
+        {% when 'double-image' %}
+            .blog {
+                flex: 1;
+            }
+            .blog-img {
+                padding: 52px 42px;
+                background: rgba(43, 39, 37, 0.1);
+            }
+            .blog-img img{
+                max-width: 365px;
+            }
+            .blog-author {
+                font-family: 'Intervogue';
+                font-style: normal;
+                font-weight: 400;
+                font-size: {{ block.settings.font_size_author }}px;
+                line-height: 27px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: {{ block.settings.blog-text-color }};
+            }
+            .blog-title {
+                font-family: 'Silvana';
+                font-style: normal;
+                font-weight: 400;
+                font-size: {{ block.settings.font_size_title }}px;
+                line-height: 27px;
+                text-align: justify;
+                letter-spacing: -0.01em;
+                color: {{ block.settings.blog-text-color }};
+            }
+            {% if block.settings.hide-blog-details %}
+            .blog-details-wrapper {
+                    display: none;
+                }
+            {% endif %}
+        {% when 'spacer-block' %}
+        .blog-section-inner .spacer-{{ block.id }}{
+            height: {{ block.settings.spacer-height-desktop }}px;
+        }
     {% endcase %}
   {% endfor %}
 </style>
