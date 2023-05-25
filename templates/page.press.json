@@ -56,10 +56,40 @@
       ],
       "settings": {
       }
+    },
+    "6ceb4781-80bd-4a40-a838-be2d17761586": {
+      "type": "np-press-double-img",
+      "blocks": {
+        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-0": {
+          "type": "double-image",
+          "settings": {
+            "blog-author": "ex: Vogue, Times",
+            "blog-title": "Lorem Lorem",
+            "font_size_author": 16,
+            "font_size_title": 16,
+            "blog-text-color": "#000000",
+            "hide-blog-details": false
+          }
+        },
+        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 115,
+            "spacer-height-mobile": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-0",
+        "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "7938e8e5-cdc3-41a2-a089-d0360ba2de9c"
+    "7938e8e5-cdc3-41a2-a089-d0360ba2de9c",
+    "6ceb4781-80bd-4a40-a838-be2d17761586"
   ]
 }
