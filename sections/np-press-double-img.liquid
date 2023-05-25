@@ -3,12 +3,20 @@
     <div class="blog-section-inner">
         {% for block in section.blocks %}
             {% case block.type %}
-                {% when 'single-image' %}
-                    <div class="single-img-post-wrapper">
+                {% when 'double-image' %}
+                    <div class="blog-post-wrapper">
                         <div class="blog">
                             <a href="#">
                                 <div class="blog-img">
-                                <img src="{{ block.settings.image-first | img_url: 'master'}}" alt="image">
+                                <img src="{{ block.settings.image-first | img_url: 'master'}}" alt="first image">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="blog">
+                            <a href="#">
+                                <div class="blog-img">
+                                <img src="{{ block.settings.image-second | img_url: 'master'}}" alt="second image">
                                 </div>
                             </a>
                         </div>
@@ -28,18 +36,23 @@
 
 {% schema %}
   {
-    "name": "Single Image Blog",
+    "name": "Double Image Blog",
     "settings": [],
     "blocks": [
       {
-        "name": "Single Image",
-        "type": "single-image",
+        "name": "Double Image",
+        "type": "double-image",
         "settings": [
             {
                 "type": "image_picker",
                 "id": "image-first",
-                "label": "Add Image "
+                "label": "Add First Image "
             }, 
+            {
+                "type": "image_picker",
+                "id": "image-second",
+                "label": "Add Second Image "
+            },
             {
                 "type": "text",
                 "id": "blog-author",
@@ -115,10 +128,10 @@
     ],
     "presets": [
       {
-        "name": "Single Image Blog",
+        "name": "Double Image Blog",
         "blocks": [
           {
-            "type": "single-image"
+            "type": "double-image"
           }, {
             "type": "spacer-block"
           }
@@ -130,11 +143,17 @@
 {% endschema %}
 
 <style>
+  .blog-post-wrapper {
+    display: flex;
+    gap: 5px;
+  }
 
   {% for block in section.blocks %}
     {% case block.type %}
-        {% when 'single-image' %}
-           
+        {% when 'double-image' %}
+            .blog {
+                flex: 1;
+            }
             .blog-img {
                 padding: 52px 42px;
                 background: rgba(43, 39, 37, 0.1);
