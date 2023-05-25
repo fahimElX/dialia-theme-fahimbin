@@ -25,9 +25,20 @@
       ],
       "settings": {
       }
+    },
+    "b9a739a4-4f2a-421b-88ec-dcf5fc06ec51": {
+      "type": "np-press-single-img",
+      "settings": {
+        "blog-author": "HARPER’S BAZAAR",
+        "blog-title": "Unstitched: Ninety Percent, 2023",
+        "font_size_author": 18,
+        "font_size_title": 16,
+        "blog-text-color": "#2b2725"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b9a739a4-4f2a-421b-88ec-dcf5fc06ec51"
   ]
 }
