@@ -34,11 +34,11 @@
           "settings": {
             "image-first": "shopify:\/\/shop_images\/1_1.png",
             "image-second": "shopify:\/\/shop_images\/2_20819.png",
-            "blog-author": "ex: Vogue, Times",
-            "blog-title": "Lorem Lorem",
-            "font_size_author": 16,
+            "blog-author": "Harper’s Bazaar",
+            "blog-title": "Unstitched: Ninety Percent, 2023",
+            "font_size_author": 18,
             "font_size_title": 16,
-            "blog-text-color": "#000000",
+            "blog-text-color": "#2b2725",
             "hide-blog-details": false
           }
         }
