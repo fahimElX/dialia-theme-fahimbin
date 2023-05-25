@@ -1,27 +1,30 @@
 <section class="section-wrapper-{{ section.id }} np-page-width">
-  {% for block in section.blocks %}
-    {%  case block.type %} 
+  <div class="press-page-wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
         {% when "main-title" %}
-          <div class="block-{{block.id}}">
-            <div class="main-section-inner">
-              <div class="main-tittle-div">
-                <p class="main-title">
-                  {{ block.settings.press-main-title }}
-                </p>
-              </div>
-              <div class="main-description-div">
-                <p class="main-description">
-                  {{ block.settings.press-main-description }}  
-                </p>
-              </div>
+        <div class="block-{{block.id}}">
+          <div class="main-section-inner">
+            <div class="main-tittle-div">
+              <p class="main-title">
+                {{ block.settings.press-main-title }}
+              </p>
+            </div>
+            <div class="main-description-div">
+              <p class="main-description">
+                {{ block.settings.press-main-description }}
+              </p>
             </div>
           </div>
+        </div>
         {% when 'spacer-block' %}
-            <div class="spacer-{{ block.id }}">           
-            </div>  
-          
-   {% endcase %} 
-  {% endfor %}
+        <div class="spacer-{{ block.id }}">
+
+        </div>
+
+      {% endcase %}
+    {% endfor %}
+  </div>
 </section>
 
 
@@ -35,53 +38,49 @@
         "type": "main-title",
         "settings": [
           {
-  "type": "text",
-  "id": "press-main-title",
-  "label": "Main Heading",
-  "default": "Press"
-},
-{
-  "type": "textarea",
-  "id": "press-main-description",
-  "label": "Description",
-  "default": "Write something"
-},
-{
-  "type": "range",
-  "id": "margin-top-bottom",
-  "min": 5,
-  "max": 100,
-  "step": 1,
-  "unit": "px",
-  "label": "Margin Top Bottom",
-  "default": 10
-}
-
+            "type": "text",
+            "id": "press-main-title",
+            "label": "Main Heading",
+            "default": "Press"
+          }, {
+            "type": "textarea",
+            "id": "press-main-description",
+            "label": "Description",
+            "default": "Write something"
+          }, {
+            "type": "range",
+            "id": "margin-top-bottom",
+            "min": 5,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Margin Top Bottom",
+            "default": 10
+          }
         ]
-      },{
+      }, {
         "name": "Spacer Block",
         "type": "spacer-block",
         "settings": [
           {
-  "type": "range",
-  "id": "spacer-height-desktop",
-  "min": 0,
-  "max": 200,
-  "step": 5,
-  "unit": "px",
-  "label": "Spacer Height Desktop",
-  "default": 10
-},
-{
-  "type": "range",
-  "id": "spacer-height-mobile",
-  "min": 0,
-  "max": 200,
-  "step": 5,
-  "unit": "px",
-  "label": "Spacer Height Mobile",
-  "default": 10
-}
+            "type": "range",
+            "id": "spacer-height-desktop",
+            "min": 0,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Spacer Height Desktop",
+            "default": 10
+          }, {
+            "type": "range",
+            "id": "spacer-height-mobile",
+            "min": 0,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Spacer Height Mobile",
+            "default": 10
+          }
 
         ]
       }
@@ -92,8 +91,7 @@
         "blocks": [
           {
             "type": "main-title"
-          },
-          {
+          }, {
             "type": "spacer-block"
           }
         ]
@@ -102,92 +100,69 @@
   }
 {% endschema %}
 
-{%  style  %} 
+{% style %}
   .np-page-width {
     max-width: 1440px;
     margin: 0 auto;
-}
-{% for block in section.blocks %}
-    {%  case block.type %} 
-        {% when "main-title" %}
-          .block-{{block.id}} .main-section-inner{
-            margin-left: 17.5%;
-          }
-          .block-{{block.id}} .main-section-inner .main-tittle-div{
-
-          }
-          .block-{{block.id}} .main-section-inner .main-tittle-div .main-title{
-            font-family: 'Silvana';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 100px;
-            line-height: 105px;
-            letter-spacing: -0.03em;
-            color: #2B2725;
-            margin: {{ block.settings.margin-top-bottom }}px 0;
-          }
-          .block-{{block.id}} .main-section-inner .main-description-div{
-            max-width: 654px;
-          }
-          .block-{{block.id}} .main-section-inner .main-description-div .main-description{
-            font-family: 'Silvana';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 26px;
-            line-height: 36px;
-            letter-spacing: -0.01em;
-            color: #2B2725;
-            margin-bottom: 0;
-          }
-          {% when 'spacer-block' %}
-            .section-wrapper-{{ section.id }}  .spacer-{{ block.id }} {
-                height: {{ block.settings.spacer-height-desktop }}px;
-            }
-   {% endcase %} 
+  }
+  .np-page-width .press-page-wrapper {
+    margin: 0 17.5%;
+  }
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "main-title" %}
+      .block-{{ block.id}}.main-section-inner {}
+      .block-{{ block.id}}.main-section-inner .main-tittle-div {}
+      .block-{{ block.id}} .main-section-inner .main-tittle-div .main-title {
+        font-family: 'Silvana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 105px;
+        letter-spacing: -0.03em;
+        color: #2B2725;
+        margin: {{ block.settings.margin-top-bottom }}px 0;
+      }
+      .block-{{ block.id}}.main-section-inner .main-description-div {}
+      .block-{{ block.id}} .main-section-inner .main-description-div .main-description {
+        font-family: 'Silvana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        color: #2B2725;
+      }
+      {% when 'spacer-block' %}
+      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+        height: {{ block.settings.spacer-height-desktop }}px;
+      }
+    {% endcase %}
   {% endfor %}
 
 
 
-  @media(max-width: 768px) { 
-    .np-page-width { padding: 0 20px; }
-    
+  @media(max-width: 768px) {
+    .np-page-width {
+      padding: 0 20px;
+    }
+
     {% for block in section.blocks %}
-    {%  case block.type %} 
+      {% case block.type %}
         {% when "main-title" %}
-          .block-{{block.id}} .main-section-inner{
-            margin-left: 0;
-          }
-          .block-{{block.id}} .main-section-inner .main-tittle-div .main-title{
-            font-family: 'Silvana';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 54px;
-            line-height: 55px;
-            letter-spacing: -2px;
-            margin: 14px 0 42px 0;
-          }
-          .block-{{block.id}} .main-section-inner .main-description-div{
-            max-width: 100%;
-          }
-          .block-{{block.id}} .main-section-inner .main-description-div .main-description{
-            font-family: 'Silvana';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            letter-spacing: -0.01em;
-            color: #2B2725;
-          }
-          {% when 'spacer-block' %}
-            .section-wrapper-{{ section.id }}  .spacer-{{ block.id }} {
-                height: {{ block.settings.spacer-height-mobile }}px;
-            }
+        .block-{{ block.id}} .main-section-inner {
+          margin-left: 0;
+        }
+        .block-{{ block.id}}.main-section-inner .main-tittle-div .main-title {}
+        .block-{{ block.id}}.main-section-inner .main-description-div {}
+        .block-{{ block.id}}.main-section-inner .main-description-div .main-description {}
+        {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height-mobile }}px;
+        }
 
-        {% endcase %} 
-  {% endfor %}
+      {% endcase %}
+    {% endfor %}
 
   }
-{% endstyle %} 
-
-{% javascript %}
-{% endjavascript %}
+{% endstyle %}

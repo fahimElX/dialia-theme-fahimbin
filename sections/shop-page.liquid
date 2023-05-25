@@ -33,6 +33,8 @@
 </script>
             
           </form>
+
+          {% paginate collection.products by 9 %}
           <div class="tm-shop-products">
             <div class="row mt-30-reverse">
               {% for product in collections['all'].products %}
@@ -97,25 +99,61 @@
               {% endfor %}
             </div>
           </div>
-          <div class="tm-pagination mt-50">
-            <ul>
+
+          {%- if paginate.pages > 1 -%}
+    <nav role="navigation" class="tm-pagination mt-50">
+      <ul class="pagination">
+        {%- if paginate.previous-%}
+          <li>
+            <a href="{{ paginate.previous.url }}">
+              <span aria-hidden="true">&laquo;</span>
+              Previous <span class="visuallyhidden">page</span>
+            </a>
+          </li>
+        {%- else -%}
+          <li class="disabled">
+            <span aria-hidden="true">&laquo;</span>
+            Previous <span class="visuallyhidden">page</span>
+          </li>
+        {%- endif -%}
+
+        {%- for part in paginate.parts -%}
+          {%- if part.is_link -%}
+            <li>
+              <a href="{{ part.url }}">
+                <span class="visuallyhidden">page</span> {{ part.title }}
+              </a>
+            </li>
+          {%- else -%}
+            {%- if part.title == paginate.current_page -%}
+              <li class="is-active" aria-current="page">
+                <span class="visuallyhidden">page</span> {{ part.title }}
+              </li>
+            {%- else -%}
               <li>
-                <a href="shop.html">&lt; Prev</a>
+                <span class="visuallyhidden">page</span> {{ part.title }}
               </li>
-              <li class="is-active">
-                <a href="shop.html">1</a>
-              </li>
-              <li>
-                <a href="shop.html">2</a>
-              </li>
-              <li>
-                <a href="shop.html">3</a>
-              </li>
-              <li>
-                <a href="shop.html">Next &gt;</a>
-              </li>
-            </ul>
-          </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if paginate.next -%}
+          <li>
+            <a href="{{ paginate.next.url }}">
+              Next <span class="visuallyhidden">page</span>
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        {%- else -%}
+          <li class="disabled">
+            Next <span class="visuallyhidden">page</span>
+            <span aria-hidden="true">&raquo;</span>
+          </li>
+        {%- endif -%}
+      </ul>
+    </nav>
+  {%- endif -%}
+        {% endpaginate %}
         </div>
       </div>
       <div class="col-lg-3 col-12">
