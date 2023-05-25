@@ -57,6 +57,38 @@
       "settings": {
       }
     },
+    "28f4c340-e38d-4c2a-ac9d-f1f0ac182f03": {
+      "type": "np-press-three-img-layout",
+      "blocks": {
+        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-0": {
+          "type": "three-image",
+          "settings": {
+            "image-first": "shopify:\/\/shop_images\/Amber-Valletta-covers-Porter-Magazine-January-13th-2020-by-David-Luraschi-1_1.png",
+            "image-second": "shopify:\/\/shop_images\/Amber_Valletta_Porter_Magazine_1.png",
+            "image-third": "shopify:\/\/shop_images\/Amber_Valletta_Porter_Magazine_1_1.png",
+            "blog-author": "Porter",
+            "blog-title": "Amber Valletta wearing Ninety Percent, 2022",
+            "font_size_author": 18,
+            "font_size_title": 16,
+            "blog-text-color": "#2b2725",
+            "hide-blog-details": false
+          }
+        },
+        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 125,
+            "spacer-height-mobile": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-0",
+        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-1"
+      ],
+      "settings": {
+      }
+    },
     "eb958461-1fc7-483e-a910-5896c7226b55": {
       "type": "np-press-single-img",
       "blocks": {
@@ -139,45 +171,13 @@
       ],
       "settings": {
       }
-    },
-    "28f4c340-e38d-4c2a-ac9d-f1f0ac182f03": {
-      "type": "np-press-three-img-layout",
-      "blocks": {
-        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-0": {
-          "type": "three-image",
-          "settings": {
-            "image-first": "shopify:\/\/shop_images\/Amber-Valletta-covers-Porter-Magazine-January-13th-2020-by-David-Luraschi-1_1.png",
-            "image-second": "shopify:\/\/shop_images\/Amber_Valletta_Porter_Magazine_1.png",
-            "image-third": "shopify:\/\/shop_images\/Amber_Valletta_Porter_Magazine_1_1.png",
-            "blog-author": "Porter",
-            "blog-title": "Amber Valletta wearing Ninety Percent, 2022",
-            "font_size_author": 18,
-            "font_size_title": 16,
-            "blog-text-color": "#2b2725",
-            "hide-blog-details": false
-          }
-        },
-        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height-desktop": 10,
-            "spacer-height-mobile": 10
-          }
-        }
-      },
-      "block_order": [
-        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-0",
-        "template--18819583508763__28f4c340-e38d-4c2a-ac9d-f1f0ac182f03-1685028041b159b47c-1"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
     "7938e8e5-cdc3-41a2-a089-d0360ba2de9c",
+    "28f4c340-e38d-4c2a-ac9d-f1f0ac182f03",
     "eb958461-1fc7-483e-a910-5896c7226b55",
-    "6ceb4781-80bd-4a40-a838-be2d17761586",
-    "28f4c340-e38d-4c2a-ac9d-f1f0ac182f03"
+    "6ceb4781-80bd-4a40-a838-be2d17761586"
   ]
 }
