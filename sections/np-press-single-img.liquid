@@ -21,7 +21,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="blog-details-wrapper">
+                    <div class="blog-details-wrapper-{{ block.id }}">
                         <p class="blog-author">{{ block.settings.blog-author }}</p>
                         <p class="blog-title">{{ block.settings.blog-title }}</p>
                     </div>
@@ -147,13 +147,6 @@
     display: flex;
     gap: 5px;
   }
-  .blog-details-wrapper {
-    margin-top: 15px;
-    display: flex;
-    gap: 30px;
-  }
-  
-  
 
   {% for block in section.blocks %}
     {% case block.type %}
@@ -188,8 +181,13 @@
                 letter-spacing: -0.01em;
                 color: {{ block.settings.blog-text-color }};
             }
+            .blog-details-wrapper-{{ block.id }} {
+                margin-top: 15px;
+                display: flex;
+                gap: 30px;
+            }
             {% if block.settings.hide-blog-details %}
-            .blog-section-inner .blog-details-wrapper {
+               .blog-details-wrapper-{{ block.id }} {
                     display: none;
                 }
             {% endif %}
