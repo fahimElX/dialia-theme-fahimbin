@@ -63,18 +63,20 @@
         "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-0": {
           "type": "double-image",
           "settings": {
+            "image-first": "shopify:\/\/shop_images\/Anne-Hathaway-Vogue-Hong-Kong-November-2022-Cover02_1.png",
+            "image-second": "shopify:\/\/shop_images\/Vogue_Hong_Kong_043_Feature_v2-1_1.png",
             "blog-author": "ex: Vogue, Times",
             "blog-title": "Lorem Lorem",
             "font_size_author": 16,
             "font_size_title": 16,
             "blog-text-color": "#000000",
-            "hide-blog-details": false
+            "hide-blog-details": true
           }
         },
         "template--18819583508763__6ceb4781-80bd-4a40-a838-be2d17761586-1685014798f5e1eec1-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height-desktop": 170,
+            "spacer-height-desktop": 5,
             "spacer-height-mobile": 10
           }
         }
