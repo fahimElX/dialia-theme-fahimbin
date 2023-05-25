@@ -85,12 +85,12 @@
           "settings": {
             "image-first": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1.png",
             "image-second": "shopify:\/\/shop_images\/Screenshot_2023-05-10_at_14.35_1_1.png",
-            "blog-author": "ex: Vogue, Times",
-            "blog-title": "Lorem Lorem",
-            "font_size_author": 16,
+            "blog-author": "Vogue Hong kong",
+            "blog-title": "Fashion with Compassion, 2023",
+            "font_size_author": 18,
             "font_size_title": 16,
-            "blog-text-color": "#000000",
-            "hide-blog-details": true
+            "blog-text-color": "#2b2725",
+            "hide-blog-details": false
           }
         }
       },
