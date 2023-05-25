@@ -143,7 +143,7 @@
 {% endschema %}
 
 <style>
-  .blog-post-wrapper {
+  .section-wrapper-{{ section.id }} .blog-post-wrapper {
     display: flex;
     gap: 5px;
   }
@@ -151,17 +151,17 @@
   {% for block in section.blocks %}
     {% case block.type %}
         {% when 'double-image' %}
-            .blog {
+          .section-wrapper-{{ section.id }} .blog {
                 flex: 1;
             }
-            .blog-img {
+            .section-wrapper-{{ section.id }} .blog-img {
                 padding: 52px 42px;
                 background: rgba(43, 39, 37, 0.1);
             }
-            .blog-img img{
+            .section-wrapper-{{ section.id }} .blog-img img{
                 max-width: 365px;
             }
-            .blog-author {
+            .section-wrapper-{{ section.id }} .blog-author {
                 font-family: 'Intervogue';
                 font-style: normal;
                 font-weight: 400;
@@ -171,7 +171,7 @@
                 text-transform: uppercase;
                 color: {{ block.settings.blog-text-color }};
             }
-            .blog-title {
+            .section-wrapper-{{ section.id }} .blog-title {
                 font-family: 'Silvana';
                 font-style: normal;
                 font-weight: 400;
@@ -181,18 +181,18 @@
                 letter-spacing: -0.01em;
                 color: {{ block.settings.blog-text-color }};
             }
-            .blog-details-wrapper-{{ block.id }} {
+            .section-wrapper-{{ section.id }} .blog-details-wrapper-{{ block.id }} {
                 margin-top: 15px;
                 display: flex;
                 gap: 30px;
             }
             {% if block.settings.hide-blog-details %}
-               .blog-details-wrapper-{{ block.id }} {
+            .section-wrapper-{{ section.id }} .blog-details-wrapper-{{ block.id }} {
                     display: none;
                 }
             {% endif %}
         {% when 'spacer-block' %}
-        .blog-section-inner .spacer-{{ block.id }}{
+          .section-wrapper-{{ section.id }} .blog-section-inner .spacer-{{ block.id }}{
             height: {{ block.settings.spacer-height-desktop }}px;
         }
     {% endcase %}
