@@ -57,6 +57,36 @@
       "settings": {
       }
     },
+    "eb958461-1fc7-483e-a910-5896c7226b55": {
+      "type": "np-press-single-img",
+      "blocks": {
+        "template--18819583508763__eb958461-1fc7-483e-a910-5896c7226b55-1685016685274358f9-0": {
+          "type": "single-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NAP1_1.png",
+            "blog-author": "Porter",
+            "blog-title": "The Perfect Black Dress, 2023",
+            "font_size_author": 18,
+            "font_size_title": 16,
+            "blog-text-color": "#2b2725",
+            "hide-blog-details": false
+          }
+        },
+        "template--18819583508763__eb958461-1fc7-483e-a910-5896c7226b55-1685016685274358f9-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 10,
+            "spacer-height-mobile": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--18819583508763__eb958461-1fc7-483e-a910-5896c7226b55-1685016685274358f9-0",
+        "template--18819583508763__eb958461-1fc7-483e-a910-5896c7226b55-1685016685274358f9-1"
+      ],
+      "settings": {
+      }
+    },
     "6ceb4781-80bd-4a40-a838-be2d17761586": {
       "type": "np-press-double-img",
       "blocks": {
@@ -114,6 +144,7 @@
   "order": [
     "main",
     "7938e8e5-cdc3-41a2-a089-d0360ba2de9c",
+    "eb958461-1fc7-483e-a910-5896c7226b55",
     "6ceb4781-80bd-4a40-a838-be2d17761586"
   ]
 }
