@@ -92,12 +92,20 @@
             "blog-text-color": "#2b2725",
             "hide-blog-details": false
           }
+        },
+        "f9639895-6717-42da-b6cf-06aa4d9b7ac8": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 170,
+            "spacer-height-mobile": 10
+          }
         }
       },
       "block_order": [
         "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-0",
         "template--18819583508763__02aa041f-d23a-4739-8682-68ad53ba8f31-1685010209fd6f707b-1",
-        "6900edca-fc33-45a4-be85-e733406c4170"
+        "6900edca-fc33-45a4-be85-e733406c4170",
+        "f9639895-6717-42da-b6cf-06aa4d9b7ac8"
       ],
       "settings": {
       }
