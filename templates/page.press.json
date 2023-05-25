@@ -41,10 +41,18 @@
             "blog-text-color": "#2b2725",
             "hide-blog-details": false
           }
+        },
+        "194ab260-c50e-40eb-b137-b41a73f6029f": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height-desktop": 115,
+            "spacer-height-mobile": 10
+          }
         }
       },
       "block_order": [
-        "7c2b8f9a-d50b-4a80-aa54-5810af0c75c0"
+        "7c2b8f9a-d50b-4a80-aa54-5810af0c75c0",
+        "194ab260-c50e-40eb-b137-b41a73f6029f"
       ],
       "settings": {
       }
