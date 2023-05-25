@@ -82,7 +82,7 @@
             "font_size_author": 16,
             "font_size_title": 16,
             "blog-text-color": "#000000",
-            "hide-blog-details": false
+            "hide-blog-details": true
           }
         }
       },
